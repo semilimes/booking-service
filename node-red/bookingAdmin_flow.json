@@ -1,0 +1,1088 @@
+[
+    {
+        "id": "904e53bf68e45530",
+        "type": "tab",
+        "label": "Bookings Admin",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3cd4b8df15654d51",
+        "type": "group",
+        "z": "904e53bf68e45530",
+        "name": "TimeSpanForm Setup",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "ae0e3962c1f8aadc",
+            "b2f1b51d799d324d",
+            "d60dbb905bbf99da",
+            "ba5ea480649eed7f",
+            "c68c839b96b75837",
+            "79e8c1e071a81349",
+            "5fdda5187adac7da",
+            "6706fd2b9570951f",
+            "85a570898f1d7d2e",
+            "f2602bb364519770",
+            "3d0ac1592c8da14a",
+            "4a8f0494d4c7f892"
+        ],
+        "x": 74,
+        "y": 39,
+        "w": 1092,
+        "h": 242
+    },
+    {
+        "id": "ae0e3962c1f8aadc",
+        "type": "inject",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "Setup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 80,
+        "wires": [
+            [
+                "5fdda5187adac7da"
+            ]
+        ]
+    },
+    {
+        "id": "b2f1b51d799d324d",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_create",
+        "actionText": "Channel - Create",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "title": "Bookings Admin",
+        "titleType": "str",
+        "saveLocation": "#:(file)::bookingsAdminChannelId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 520,
+        "y": 140,
+        "wires": [
+            [
+                "c68c839b96b75837"
+            ]
+        ]
+    },
+    {
+        "id": "d60dbb905bbf99da",
+        "type": "switch",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "Channel Not Exists?",
+        "property": "#:(file)::bookingsAdminChannelId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 220,
+        "y": 140,
+        "wires": [
+            [
+                "b2f1b51d799d324d"
+            ],
+            [
+                "ba5ea480649eed7f"
+            ]
+        ]
+    },
+    {
+        "id": "ba5ea480649eed7f",
+        "type": "smeMessage",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "TimeSpanSelectionForm",
+        "message": "form",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<b>This is an html message</b>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "#:(file)::timeSpanSelectionForm",
+        "formLocationType": "flow",
+        "x": 490,
+        "y": 200,
+        "wires": [
+            [
+                "3d0ac1592c8da14a"
+            ]
+        ]
+    },
+    {
+        "id": "c68c839b96b75837",
+        "type": "change",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "",
+        "rules": [
+            {
+                "t": "delete",
+                "p": "headers",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 770,
+        "y": 140,
+        "wires": [
+            [
+                "79e8c1e071a81349"
+            ]
+        ]
+    },
+    {
+        "id": "79e8c1e071a81349",
+        "type": "delay",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "3",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 940,
+        "y": 140,
+        "wires": [
+            [
+                "ba5ea480649eed7f"
+            ]
+        ]
+    },
+    {
+        "id": "5fdda5187adac7da",
+        "type": "smeFormSetup",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "#:(file)::timeSpanSelectionForm",
+        "saveLocationType": "flow",
+        "submitEnabled": "1",
+        "retainStatus": "1",
+        "submitText": "Confirm",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "receiverType": "none",
+        "refName": "timeSpanSelectionForm",
+        "refNameType": "str",
+        "x": 460,
+        "y": 80,
+        "wires": [
+            [
+                "6706fd2b9570951f"
+            ]
+        ]
+    },
+    {
+        "id": "6706fd2b9570951f",
+        "type": "smeFormComponent",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "",
+        "reference": "startDate",
+        "referenceType": "str",
+        "component": "datepicker",
+        "title": "Choose a Date",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 760,
+        "y": 80,
+        "wires": [
+            [
+                "85a570898f1d7d2e"
+            ]
+        ]
+    },
+    {
+        "id": "85a570898f1d7d2e",
+        "type": "smeFormComponent",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "",
+        "reference": "spanSelection",
+        "referenceType": "str",
+        "component": "singlechoice",
+        "title": "Show slots for",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [
+            {
+                "name": "Selected Day",
+                "value": "selectedDay"
+            },
+            {
+                "name": "Next 7 days",
+                "value": "nextWeek"
+            }
+        ],
+        "choiceSelectionMode": "dropdown",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 1000,
+        "y": 80,
+        "wires": [
+            [
+                "d60dbb905bbf99da"
+            ]
+        ]
+    },
+    {
+        "id": "f2602bb364519770",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_send",
+        "actionText": "Channel - Send Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::timeSpanSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 1010,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "57d98e80c3c91f76",
+        "type": "smeListener",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "x": 110,
+        "y": 320,
+        "wires": [
+            [
+                "b0bec7a3b4683781"
+            ]
+        ]
+    },
+    {
+        "id": "0599cef7fdc742e0",
+        "type": "smeFilter",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "filter": "submission",
+        "reference": "timeSpanSelectionForm",
+        "referenceType": "str",
+        "messageId": "#:(file)::timeSpanSelectionFormMessageId",
+        "messageIdType": "flow",
+        "extractValues": true,
+        "chat": "p2p",
+        "senderId": "",
+        "senderIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "requestId": "savedRequestId",
+        "requestIdType": "flow",
+        "saveLocation": "filteredEvent",
+        "saveLocationType": "msg",
+        "x": 310,
+        "y": 500,
+        "wires": [
+            [
+                "33a731c6dbd278f7",
+                "3685bf11d6d6de5d"
+            ]
+        ]
+    },
+    {
+        "id": "33a731c6dbd278f7",
+        "type": "switch",
+        "z": "904e53bf68e45530",
+        "name": "Span selection",
+        "property": "spanSelection",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "selectedDay",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "nextWeek",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 600,
+        "y": 500,
+        "wires": [
+            [
+                "fda7f0b5c35bd1ec"
+            ],
+            [
+                "3348f80444783827"
+            ]
+        ]
+    },
+    {
+        "id": "5cdbc640bc07c180",
+        "type": "link call",
+        "z": "904e53bf68e45530",
+        "name": "",
+        "links": [
+            "8999cbbf80801462"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1070,
+        "y": 500,
+        "wires": [
+            [
+                "be2ca5941c8f4338",
+                "0ca8a33dcf678937"
+            ]
+        ]
+    },
+    {
+        "id": "be2ca5941c8f4338",
+        "type": "debug",
+        "z": "904e53bf68e45530",
+        "name": "debug 139",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1290,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "fda7f0b5c35bd1ec",
+        "type": "change",
+        "z": "904e53bf68e45530",
+        "name": "Set 1 day",
+        "rules": [
+            {
+                "t": "set",
+                "p": "daysToReturn",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 880,
+        "y": 480,
+        "wires": [
+            [
+                "5cdbc640bc07c180"
+            ]
+        ]
+    },
+    {
+        "id": "3348f80444783827",
+        "type": "change",
+        "z": "904e53bf68e45530",
+        "name": "Set 7 days",
+        "rules": [
+            {
+                "t": "set",
+                "p": "daysToReturn",
+                "pt": "msg",
+                "to": "7",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 870,
+        "y": 520,
+        "wires": [
+            [
+                "5cdbc640bc07c180"
+            ]
+        ]
+    },
+    {
+        "id": "0ca8a33dcf678937",
+        "type": "smeFormSetup",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "#:(file)::slotSelectionForm",
+        "saveLocationType": "flow",
+        "submitEnabled": "1",
+        "retainStatus": "0",
+        "submitText": "Activate",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "receiverType": "none",
+        "refName": "slotSelectionForm",
+        "refNameType": "str",
+        "x": 290,
+        "y": 580,
+        "wires": [
+            [
+                "0f4f9771d9306c17"
+            ]
+        ]
+    },
+    {
+        "id": "0f4f9771d9306c17",
+        "type": "smeFormComponent",
+        "z": "904e53bf68e45530",
+        "name": "Available Slots label",
+        "reference": "availableSlots",
+        "referenceType": "str",
+        "component": "label",
+        "title": "Available Slots",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "x": 580,
+        "y": 580,
+        "wires": [
+            [
+                "4061ac236e8fd02b"
+            ]
+        ]
+    },
+    {
+        "id": "8ac68e6adda430f5",
+        "type": "smeMessage",
+        "z": "904e53bf68e45530",
+        "name": "Form Message",
+        "message": "form",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<b>This is an html message</b>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "#:(file)::slotSelectionForm",
+        "formLocationType": "flow",
+        "x": 220,
+        "y": 640,
+        "wires": [
+            [
+                "5a14c7b3975756d8"
+            ]
+        ]
+    },
+    {
+        "id": "6747b4d5d98c099c",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_send",
+        "actionText": "Channel - Send Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::slotSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": true,
+        "x": 770,
+        "y": 640,
+        "wires": [
+            [
+                "08fbbf8fc298d9ec"
+            ]
+        ]
+    },
+    {
+        "id": "5a14c7b3975756d8",
+        "type": "switch",
+        "z": "904e53bf68e45530",
+        "name": "Msg Not Exists?",
+        "property": "#:(file)::slotSelectionFormMessageId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 440,
+        "y": 640,
+        "wires": [
+            [
+                "6747b4d5d98c099c"
+            ],
+            [
+                "840d8352c2abbfc5"
+            ]
+        ]
+    },
+    {
+        "id": "840d8352c2abbfc5",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "async": "1",
+        "name": "",
+        "actionName": "channel_message_update",
+        "actionText": "Channel - Update Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "#:(file)::slotSelectionFormMessageId",
+        "messageIdType": "flow",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::slotSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": true,
+        "x": 780,
+        "y": 680,
+        "wires": [
+            [
+                "08fbbf8fc298d9ec"
+            ]
+        ]
+    },
+    {
+        "id": "4061ac236e8fd02b",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "name": "Modify Slot Selection Form Options",
+        "func": "let formComponents = flow.get(\"slotSelectionForm\", \"file\").formComponents;\nlet foundSlots = msg.foundSlots;\nlet config = msg.config;\n\nif (formComponents !== undefined) {\n    foundSlots.forEach(function(slotDay) {\n        let currentDay = slotDay.day;\n        let currentFormComponent = {\n            refName: `slotsToActivate_${currentDay}`,\n            formComponentType: 'multichoice',\n            title: `${currentDay}`,\n            requiredSelection: false,\n            options: []\n        };\n        slotDay.slots.forEach(function(slot) {\n            let status = \"\";\n            if (slot.enabled === false) {\n                status = \"INACTIVE\";\n            } else if (slot.status === \"free\") {\n                status = \"ACTIVE\"\n            } else if (slot.status === \"booked\") {\n                status = \"BOOKED\"\n            }\n            currentFormComponent.options.push({\n               name: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')} - ${status}`,\n               value: slot.id\n            });               \n        });\n        formComponents.push(currentFormComponent);\n    });\n}\n\nreturn msg;\n\n//_${currentDay}",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 840,
+        "y": 580,
+        "wires": [
+            [
+                "8ac68e6adda430f5"
+            ]
+        ]
+    },
+    {
+        "id": "08fbbf8fc298d9ec",
+        "type": "debug",
+        "z": "904e53bf68e45530",
+        "name": "debug 140",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "3d0ac1592c8da14a",
+        "type": "switch",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "name": "Msg Not Exists?",
+        "property": "#:(file)::timeSpanSelectionFormMessageId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 740,
+        "y": 200,
+        "wires": [
+            [
+                "f2602bb364519770"
+            ],
+            [
+                "4a8f0494d4c7f892"
+            ]
+        ]
+    },
+    {
+        "id": "4a8f0494d4c7f892",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "g": "3cd4b8df15654d51",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_update",
+        "actionText": "Channel - Update Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "#:(file)::timeSpanSelectionFormMessageId",
+        "messageIdType": "flow",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::timeSpanSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 1020,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b0bec7a3b4683781",
+        "type": "link out",
+        "z": "904e53bf68e45530",
+        "name": "out_fromListener",
+        "mode": "link",
+        "links": [
+            "31097fda74fa52ed",
+            "5748335ba68369c1"
+        ],
+        "x": 175,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "31097fda74fa52ed",
+        "type": "link in",
+        "z": "904e53bf68e45530",
+        "name": "in_toTimeSpanSubmission",
+        "links": [
+            "b0bec7a3b4683781"
+        ],
+        "x": 105,
+        "y": 500,
+        "wires": [
+            [
+                "0599cef7fdc742e0"
+            ]
+        ]
+    },
+    {
+        "id": "5748335ba68369c1",
+        "type": "link in",
+        "z": "904e53bf68e45530",
+        "name": "in_toSlotsSubmission",
+        "links": [
+            "b0bec7a3b4683781"
+        ],
+        "x": 115,
+        "y": 820,
+        "wires": [
+            [
+                "fd827db8266434cc"
+            ]
+        ]
+    },
+    {
+        "id": "fd827db8266434cc",
+        "type": "smeFilter",
+        "z": "904e53bf68e45530",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "filter": "submission",
+        "reference": "slotSelectionForm",
+        "referenceType": "str",
+        "messageId": "#:(file)::slotSelectionFormMessageId",
+        "messageIdType": "flow",
+        "extractValues": true,
+        "chat": "p2p",
+        "senderId": "",
+        "senderIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "requestId": "savedRequestId",
+        "requestIdType": "flow",
+        "saveLocation": "filteredEvent",
+        "saveLocationType": "msg",
+        "x": 310,
+        "y": 820,
+        "wires": [
+            [
+                "f87cd72d4b2985d1"
+            ]
+        ]
+    },
+    {
+        "id": "6b6a8b9c4da58e8f",
+        "type": "debug",
+        "z": "904e53bf68e45530",
+        "name": "debug 141",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "f87cd72d4b2985d1",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "name": "Extract activated slots",
+        "func": "let activatedSlots = [];\nfor (const [key, value] of Object.entries(msg)) {\n  if (key.includes('slotsToActivate')) {\n    let day = key.split('_')[1];\n    value.forEach(function(slotId) {\n      activatedSlots.push(\n        {\n          day: day,\n          id: slotId\n        }\n      );\n    });\n\n  }\n}\n\nmsg = {\n  activatedSlots: activatedSlots\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 820,
+        "wires": [
+            [
+                "6b6a8b9c4da58e8f",
+                "2d5745409117427f"
+            ]
+        ]
+    },
+    {
+        "id": "2d5745409117427f",
+        "type": "link out",
+        "z": "904e53bf68e45530",
+        "name": "out_activateBookingSlots",
+        "mode": "link",
+        "links": [
+            "3a87f0811eb3ce0f"
+        ],
+        "x": 795,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "3685bf11d6d6de5d",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "name": "Save last search params",
+        "func": "let lastSearch = {\n    startDate: msg.startDate,\n    spanSelection: msg.spanSelection\n}\nflow.set(\"lastSearch\",lastSearch,\"file\"); \nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c18fbb28249b4d77",
+        "type": "link in",
+        "z": "904e53bf68e45530",
+        "name": "in_updateSearchResults",
+        "links": [
+            "7c61b83dba3b9028"
+        ],
+        "x": 175,
+        "y": 440,
+        "wires": [
+            [
+                "a2a899011eb7ace4"
+            ]
+        ]
+    },
+    {
+        "id": "a2a899011eb7ace4",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "name": "Load last search params",
+        "func": "let lastSearch = flow.get(\"lastSearch\",\"file\");\nif (lastSearch !== undefined) {\n    msg.startDate = lastSearch.startDate;\n    msg.spanSelection = lastSearch.spanSelection\n    return msg;\n} \nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "33a731c6dbd278f7"
+            ]
+        ]
+    },
+    {
+        "id": "f9adc5c8242ed986",
+        "type": "sme-main-connector",
+        "name": "SMECON",
+        "apiKeyType": "env"
+    }
+]
