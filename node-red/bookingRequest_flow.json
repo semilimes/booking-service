@@ -11,7 +11,7 @@
         "id": "6901d4fcacc93bbf",
         "type": "group",
         "z": "b924b14dcda20cbb",
-        "name": "Initial Setup",
+        "name": "Requests Setup",
         "style": {
             "label": true
         },
@@ -24,10 +24,100 @@
             "24821ce271c5ab34",
             "81326539dd149365"
         ],
-        "x": 74,
+        "x": 194,
         "y": 79,
         "w": 1152,
         "h": 162
+    },
+    {
+        "id": "597f5f964bf25ad5",
+        "type": "group",
+        "z": "b924b14dcda20cbb",
+        "name": "Manage start session of user",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "423168a686040bc3",
+            "13c1880ac68cc0ea",
+            "7d58709315fc281b",
+            "8a0239e28892322b",
+            "3eeead223038acca",
+            "becaa70f8c4830e8",
+            "e972e80b47719627",
+            "c860181a71e91a26",
+            "82c271397c7ccc71",
+            "cf646de67571b9ea",
+            "027efa0cb39b52a7",
+            "ba429d4414b8d5cd",
+            "58605633c31b8470",
+            "7e8fabb70c920354",
+            "2a2f88be988812ec",
+            "0cb05d914125f8a3",
+            "2757483e6be1bd42",
+            "4b022fd9833b76e6",
+            "591f39b0b7e50490"
+        ],
+        "x": 194,
+        "y": 379,
+        "w": 1432,
+        "h": 302
+    },
+    {
+        "id": "22a8be0a1056b48a",
+        "type": "group",
+        "z": "b924b14dcda20cbb",
+        "name": "Manage date selection of user",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "df0a57ba6835c338",
+            "3c1130f29aba3ed8",
+            "b34073113d7ead32",
+            "7612b24b279c7a9e",
+            "2cc3773bd3b96cb3",
+            "a4ca53a1db45bb29",
+            "854bbca4df5e38ad",
+            "3e7acb6429615813",
+            "7516d2d82da92ed7",
+            "93069f0eae31b8eb",
+            "a2bb6fe7356e0837",
+            "508b0e0c7c0c300e",
+            "3d0419a23ea94149",
+            "4ca3ca98d109a453",
+            "debb7a17f7080f62",
+            "8580efe4bb2abbce",
+            "9ff2373997d32be6"
+        ],
+        "x": 194,
+        "y": 719,
+        "w": 1052,
+        "h": 362
+    },
+    {
+        "id": "fc5c3a27e3769f0f",
+        "type": "group",
+        "z": "b924b14dcda20cbb",
+        "name": "Manage slot selection of user",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "729a3a7eb45f1b2e",
+            "d834a0d9e8f16f49",
+            "a084aa0c75b1853c",
+            "3290f2a11dd54627",
+            "b3092378f7ef4649",
+            "8d9b0737ed48871e",
+            "cd7e40b58c4755db",
+            "eacf5d7107ef6b2f",
+            "78f4ee526a240826"
+        ],
+        "x": 194,
+        "y": 1139,
+        "w": 712,
+        "h": 242
     },
     {
         "id": "961f76e44ba0a009",
@@ -51,7 +141,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 290,
         "y": 120,
         "wires": [
             [
@@ -83,7 +173,7 @@
         "receiverType": "channel",
         "refName": "bookingRequest_dateSelectionForm",
         "refNameType": "str",
-        "x": 500,
+        "x": 620,
         "y": 120,
         "wires": [
             [
@@ -126,7 +216,7 @@
         "multiSelection": "false",
         "multiSelectionType": "bool",
         "bucketFilter": "all",
-        "x": 820,
+        "x": 940,
         "y": 120,
         "wires": [
             [
@@ -178,31 +268,17 @@
         "multiSelection": "false",
         "multiSelectionType": "bool",
         "bucketFilter": "all",
-        "x": 1080,
+        "x": 1200,
         "y": 120,
         "wires": [
             []
         ]
     },
     {
-        "id": "8fe7dc94c763f3f7",
-        "type": "smeListener",
-        "z": "b924b14dcda20cbb",
-        "connector": "f9adc5c8242ed986",
-        "x": 110,
-        "y": 360,
-        "wires": [
-            [
-                "13c1880ac68cc0ea",
-                "df0a57ba6835c338",
-                "729a3a7eb45f1b2e"
-            ]
-        ]
-    },
-    {
         "id": "423168a686040bc3",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Get valid submitter",
         "property": "submitterId",
         "propertyType": "msg",
@@ -219,8 +295,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 350,
-        "y": 500,
+        "x": 510,
+        "y": 460,
         "wires": [
             [],
             [
@@ -232,6 +308,7 @@
         "id": "13c1880ac68cc0ea",
         "type": "smeFilter",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "name": "",
         "filter": "submission",
@@ -251,8 +328,8 @@
         "requestIdType": "flow",
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
-        "x": 240,
-        "y": 460,
+        "x": 400,
+        "y": 420,
         "wires": [
             [
                 "7d58709315fc281b"
@@ -263,6 +340,7 @@
         "id": "7d58709315fc281b",
         "type": "change",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "",
         "rules": [
             {
@@ -278,8 +356,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 150,
-        "y": 500,
+        "x": 310,
+        "y": 460,
         "wires": [
             [
                 "423168a686040bc3"
@@ -290,6 +368,7 @@
         "id": "8a0239e28892322b",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Identify User session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n}\n\nreturn msg;",
         "outputs": 1,
@@ -298,8 +377,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 620,
-        "y": 500,
+        "x": 320,
+        "y": 520,
         "wires": [
             [
                 "027efa0cb39b52a7",
@@ -320,7 +399,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 510,
         "y": 160,
         "wires": [
             []
@@ -330,6 +409,7 @@
         "id": "3eeead223038acca",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "bookingRequest_dateSelectionForm",
         "message": "form",
         "text": "This is a text message.",
@@ -366,8 +446,8 @@
         "tunnelIdType": "str",
         "formLocation": "#:(file)::bookingRequest_dateSelectionForm",
         "formLocationType": "flow",
-        "x": 1210,
-        "y": 420,
+        "x": 910,
+        "y": 440,
         "wires": [
             [
                 "becaa70f8c4830e8"
@@ -378,6 +458,7 @@
         "id": "becaa70f8c4830e8",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -404,8 +485,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1500,
-        "y": 420,
+        "x": 1200,
+        "y": 440,
         "wires": [
             [
                 "82c271397c7ccc71"
@@ -416,6 +497,7 @@
         "id": "e972e80b47719627",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "New User?",
         "property": "newUser",
         "propertyType": "msg",
@@ -430,8 +512,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 850,
-        "y": 500,
+        "x": 550,
+        "y": 520,
         "wires": [
             [
                 "3eeead223038acca"
@@ -445,6 +527,7 @@
         "id": "c860181a71e91a26",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -471,8 +554,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1430,
-        "y": 500,
+        "x": 1130,
+        "y": 520,
         "wires": [
             [
                 "2757483e6be1bd42"
@@ -483,6 +566,7 @@
         "id": "82c271397c7ccc71",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Save Search MsgId in session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.searchMsgId = msg.savedDateSelectionMsgId;\n}\nreturn msg;",
         "outputs": 1,
@@ -491,8 +575,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1770,
-        "y": 420,
+        "x": 1470,
+        "y": 440,
         "wires": [
             []
         ]
@@ -501,6 +585,7 @@
         "id": "cf646de67571b9ea",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "emptySlotsMsg",
         "message": "html",
         "text": "This is a text message.",
@@ -537,8 +622,8 @@
         "tunnelIdType": "str",
         "formLocation": "#:(file)::bookingRequest_dateSelectionForm",
         "formLocationType": "flow",
-        "x": 1220,
-        "y": 560,
+        "x": 920,
+        "y": 580,
         "wires": [
             [
                 "58605633c31b8470"
@@ -549,6 +634,7 @@
         "id": "027efa0cb39b52a7",
         "type": "delay",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "",
         "pauseType": "delay",
         "timeout": "4",
@@ -562,8 +648,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 820,
-        "y": 560,
+        "x": 520,
+        "y": 580,
         "wires": [
             [
                 "ba429d4414b8d5cd"
@@ -574,6 +660,7 @@
         "id": "ba429d4414b8d5cd",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "New User?",
         "property": "newUser",
         "propertyType": "msg",
@@ -588,8 +675,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 990,
-        "y": 560,
+        "x": 690,
+        "y": 580,
         "wires": [
             [
                 "cf646de67571b9ea"
@@ -603,6 +690,7 @@
         "id": "58605633c31b8470",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -629,8 +717,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1420,
-        "y": 560,
+        "x": 1120,
+        "y": 580,
         "wires": [
             [
                 "2a2f88be988812ec"
@@ -641,6 +729,7 @@
         "id": "7e8fabb70c920354",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -667,8 +756,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1450,
-        "y": 620,
+        "x": 1150,
+        "y": 640,
         "wires": [
             [
                 "591f39b0b7e50490"
@@ -679,6 +768,7 @@
         "id": "2a2f88be988812ec",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Save Slots MsgId in session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.slotsMsgId = msg.savedSlotsMsgId;\n}\nreturn msg;",
         "outputs": 1,
@@ -687,8 +777,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1700,
-        "y": 560,
+        "x": 1400,
+        "y": 580,
         "wires": [
             []
         ]
@@ -697,6 +787,7 @@
         "id": "df0a57ba6835c338",
         "type": "smeFilter",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "connector": "f9adc5c8242ed986",
         "name": "",
         "filter": "submission",
@@ -716,8 +807,8 @@
         "requestIdType": "flow",
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
-        "x": 310,
-        "y": 740,
+        "x": 430,
+        "y": 760,
         "wires": [
             [
                 "2cc3773bd3b96cb3"
@@ -728,6 +819,7 @@
         "id": "3c1130f29aba3ed8",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Span selection",
         "property": "spanSelection",
         "propertyType": "msg",
@@ -746,8 +838,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 440,
-        "y": 820,
+        "x": 560,
+        "y": 840,
         "wires": [
             [
                 "b34073113d7ead32"
@@ -761,6 +853,7 @@
         "id": "b34073113d7ead32",
         "type": "change",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Set 1 day",
         "rules": [
             {
@@ -776,8 +869,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 660,
-        "y": 800,
+        "x": 780,
+        "y": 820,
         "wires": [
             [
                 "3e7acb6429615813"
@@ -788,6 +881,7 @@
         "id": "7612b24b279c7a9e",
         "type": "change",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Set 7 days",
         "rules": [
             {
@@ -803,8 +897,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 650,
-        "y": 840,
+        "x": 770,
+        "y": 860,
         "wires": [
             [
                 "3e7acb6429615813"
@@ -815,6 +909,7 @@
         "id": "2cc3773bd3b96cb3",
         "type": "change",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "",
         "rules": [
             {
@@ -830,8 +925,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
-        "y": 780,
+        "x": 330,
+        "y": 800,
         "wires": [
             [
                 "a4ca53a1db45bb29"
@@ -842,6 +937,7 @@
         "id": "a4ca53a1db45bb29",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Get valid submitter",
         "property": "submitterId",
         "propertyType": "msg",
@@ -858,8 +954,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 780,
+        "x": 530,
+        "y": 800,
         "wires": [
             [],
             [
@@ -871,6 +967,7 @@
         "id": "854bbca4df5e38ad",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Identify User session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n}\n\nreturn msg;",
         "outputs": 1,
@@ -879,8 +976,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
-        "y": 820,
+        "x": 340,
+        "y": 840,
         "wires": [
             [
                 "3c1130f29aba3ed8"
@@ -891,14 +988,15 @@
         "id": "3e7acb6429615813",
         "type": "link call",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "",
         "links": [
             "8999cbbf80801462"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 870,
-        "y": 820,
+        "x": 990,
+        "y": 840,
         "wires": [
             [
                 "7516d2d82da92ed7"
@@ -936,7 +1034,7 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 670,
+        "x": 790,
         "y": 200,
         "wires": [
             []
@@ -958,7 +1056,7 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 380,
+        "x": 500,
         "y": 200,
         "wires": [
             [
@@ -970,6 +1068,7 @@
         "id": "7516d2d82da92ed7",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Filter only free-enabled slots",
         "func": "let validSlots = [];\nmsg.foundSlots.forEach(function(slotDay) {\n    let slotsToAdd = [];\n    slotDay.slots.forEach(function(slot) {\n        if (slot.enabled && slot.status === \"free\") {\n            slotsToAdd.push(slot);\n        }\n    });\n    if (slotsToAdd.length > 0) {\n        validSlots.push({\n            day: slotDay.day,\n            slots: slotsToAdd\n        });\n    }\n});\n\nmsg.validSlots = validSlots;\nreturn msg;",
         "outputs": 1,
@@ -978,8 +1077,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 860,
+        "x": 1020,
+        "y": 880,
         "wires": [
             [
                 "93069f0eae31b8eb"
@@ -990,6 +1089,7 @@
         "id": "93069f0eae31b8eb",
         "type": "smeFormSetup",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "connector": "f9adc5c8242ed986",
         "name": "",
         "saveLocation": "slotSelectionForm",
@@ -1007,8 +1107,8 @@
         "receiverType": "channel",
         "refName": "bookingRequest_slotSelectionForm",
         "refNameType": "str",
-        "x": 320,
-        "y": 1020,
+        "x": 460,
+        "y": 940,
         "wires": [
             [
                 "a2bb6fe7356e0837"
@@ -1019,6 +1119,7 @@
         "id": "a2bb6fe7356e0837",
         "type": "smeFormComponent",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Available Slots label",
         "reference": "availableSlots",
         "referenceType": "str",
@@ -1049,8 +1150,8 @@
         "multiSelection": "false",
         "multiSelectionType": "bool",
         "bucketFilter": "all",
-        "x": 660,
-        "y": 1020,
+        "x": 800,
+        "y": 940,
         "wires": [
             [
                 "508b0e0c7c0c300e"
@@ -1061,6 +1162,7 @@
         "id": "508b0e0c7c0c300e",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Modify Slot Selection Form Options",
         "func": "let formComponents = msg.slotSelectionForm.formComponents;\nlet validSlots = msg.validSlots;\nlet config = msg.config;\n\nif (formComponents !== undefined) {\n    validSlots.forEach(function(slotDay) {\n        let currentDay = slotDay.day;\n        let currentFormComponent = {\n            refName: `slotsToBook_${currentDay}`,\n            formComponentType: 'singlechoice',\n            title: `${currentDay}`,\n            requiredSelection: true,\n            options: []\n        };\n        slotDay.slots.forEach(function(slot) {\n            let status = \"\";           \n            currentFormComponent.options.push({\n                name: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')}`,\n                value: slot.id\n            });           \n        });\n        formComponents.push(currentFormComponent);\n    });\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1074,8 +1176,8 @@
                 "module": "moment-timezone"
             }
         ],
-        "x": 940,
-        "y": 1020,
+        "x": 1080,
+        "y": 940,
         "wires": [
             [
                 "3d0419a23ea94149"
@@ -1086,6 +1188,7 @@
         "id": "3d0419a23ea94149",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Form Message",
         "message": "form",
         "text": "This is a text message.",
@@ -1122,8 +1225,8 @@
         "tunnelIdType": "str",
         "formLocation": "slotSelectionForm",
         "formLocationType": "msg",
-        "x": 220,
-        "y": 1100,
+        "x": 340,
+        "y": 1000,
         "wires": [
             [
                 "4ca3ca98d109a453"
@@ -1134,6 +1237,7 @@
         "id": "4ca3ca98d109a453",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "New Msg?",
         "property": "slotsMsgId",
         "propertyType": "msg",
@@ -1148,8 +1252,8 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 430,
-        "y": 1100,
+        "x": 530,
+        "y": 1000,
         "wires": [
             [
                 "debb7a17f7080f62"
@@ -1163,6 +1267,7 @@
         "id": "debb7a17f7080f62",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -1189,8 +1294,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 720,
-        "y": 1100,
+        "x": 760,
+        "y": 1000,
         "wires": [
             [
                 "8580efe4bb2abbce"
@@ -1201,6 +1306,7 @@
         "id": "8580efe4bb2abbce",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "name": "Save Slots MsgId in session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.slotsMsgId = msg.savedSlotsMsgId;\n}\nreturn msg;",
         "outputs": 1,
@@ -1209,8 +1315,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 1100,
+        "x": 1040,
+        "y": 1000,
         "wires": [
             []
         ]
@@ -1219,6 +1325,7 @@
         "id": "9ff2373997d32be6",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -1245,8 +1352,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 710,
-        "y": 1140,
+        "x": 770,
+        "y": 1040,
         "wires": [
             []
         ]
@@ -1255,6 +1362,7 @@
         "id": "729a3a7eb45f1b2e",
         "type": "smeFilter",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "connector": "f9adc5c8242ed986",
         "name": "",
         "filter": "submission",
@@ -1274,8 +1382,8 @@
         "requestIdType": "flow",
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
-        "x": 310,
-        "y": 1240,
+        "x": 430,
+        "y": 1180,
         "wires": [
             [
                 "d834a0d9e8f16f49"
@@ -1286,6 +1394,7 @@
         "id": "d834a0d9e8f16f49",
         "type": "change",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "",
         "rules": [
             {
@@ -1301,8 +1410,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 210,
-        "y": 1280,
+        "x": 330,
+        "y": 1220,
         "wires": [
             [
                 "a084aa0c75b1853c"
@@ -1313,6 +1422,7 @@
         "id": "a084aa0c75b1853c",
         "type": "switch",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "Get valid submitter",
         "property": "submitterId",
         "propertyType": "msg",
@@ -1329,8 +1439,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 410,
-        "y": 1280,
+        "x": 530,
+        "y": 1220,
         "wires": [
             [],
             [
@@ -1342,6 +1452,7 @@
         "id": "3290f2a11dd54627",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "Identify User session",
         "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1350,8 +1461,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
-        "y": 1320,
+        "x": 340,
+        "y": 1260,
         "wires": [
             [
                 "b3092378f7ef4649"
@@ -1362,6 +1473,7 @@
         "id": "b3092378f7ef4649",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "Extract booking slot",
         "func": "let bookingSlot = {};\nfor (const [key, value] of Object.entries(msg)) {\n  if (key.includes('slotsToBook')) {\n    let day = key.split('_')[1];\n      bookingSlot =  {\n          day: day,\n          id: value\n        }\n  }\n}\n\nmsg.bookingSlot = bookingSlot;\n\nreturn msg;",
         "outputs": 1,
@@ -1370,8 +1482,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 1320,
+        "x": 550,
+        "y": 1260,
         "wires": [
             [
                 "8d9b0737ed48871e"
@@ -1382,14 +1494,15 @@
         "id": "8d9b0737ed48871e",
         "type": "link call",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "",
         "links": [
             "e242d7534c8d4c04"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 670,
-        "y": 1320,
+        "x": 790,
+        "y": 1260,
         "wires": [
             [
                 "78f4ee526a240826"
@@ -1400,6 +1513,7 @@
         "id": "cd7e40b58c4755db",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "",
         "message": "webview",
         "text": "This is a text message.",
@@ -1436,8 +1550,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 420,
-        "y": 1400,
+        "x": 540,
+        "y": 1340,
         "wires": [
             [
                 "eacf5d7107ef6b2f"
@@ -1448,6 +1562,7 @@
         "id": "eacf5d7107ef6b2f",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "connector": "f9adc5c8242ed986",
         "async": "0",
         "name": "",
@@ -1474,8 +1589,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 620,
-        "y": 1400,
+        "x": 740,
+        "y": 1340,
         "wires": [
             []
         ]
@@ -1484,6 +1599,7 @@
         "id": "78f4ee526a240826",
         "type": "function",
         "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
         "name": "Prepare Payment Link",
         "func": "msg.paymentUrl = `${msg.bookedSlot.paymentUrl}?client_reference_id=${msg.accountId}`;\nreturn msg;",
         "outputs": 1,
@@ -1492,8 +1608,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 220,
-        "y": 1400,
+        "x": 340,
+        "y": 1340,
         "wires": [
             [
                 "cd7e40b58c4755db"
@@ -1504,6 +1620,7 @@
         "id": "0cb05d914125f8a3",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Search message expired",
         "message": "html",
         "text": "This is a text message.",
@@ -1540,8 +1657,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 1130,
-        "y": 500,
+        "x": 830,
+        "y": 520,
         "wires": [
             [
                 "c860181a71e91a26"
@@ -1552,6 +1669,7 @@
         "id": "2757483e6be1bd42",
         "type": "delay",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1565,8 +1683,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1680,
-        "y": 500,
+        "x": 1380,
+        "y": 520,
         "wires": [
             [
                 "3eeead223038acca"
@@ -1577,6 +1695,7 @@
         "id": "4b022fd9833b76e6",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "Search message expired",
         "message": "html",
         "text": "This is a text message.",
@@ -1613,8 +1732,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 1190,
-        "y": 620,
+        "x": 890,
+        "y": 640,
         "wires": [
             [
                 "7e8fabb70c920354"
@@ -1625,6 +1744,7 @@
         "id": "591f39b0b7e50490",
         "type": "delay",
         "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "",
         "pauseType": "delay",
         "timeout": "1",
@@ -1638,11 +1758,29 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1680,
-        "y": 620,
+        "x": 1380,
+        "y": 640,
         "wires": [
             [
                 "cf646de67571b9ea"
+            ]
+        ]
+    },
+    {
+        "id": "6e83c6c7ab618392",
+        "type": "link in",
+        "z": "b924b14dcda20cbb",
+        "name": "in_fromListener",
+        "links": [
+            "b0bec7a3b4683781"
+        ],
+        "x": 95,
+        "y": 880,
+        "wires": [
+            [
+                "13c1880ac68cc0ea",
+                "df0a57ba6835c338",
+                "729a3a7eb45f1b2e"
             ]
         ]
     },
