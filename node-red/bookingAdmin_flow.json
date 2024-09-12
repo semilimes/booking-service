@@ -43,13 +43,13 @@
             "label": true
         },
         "nodes": [
-            "f87cd72d4b2985d1",
             "fd827db8266434cc",
-            "2d5745409117427f"
+            "2d5745409117427f",
+            "4c4858155a06c32f"
         ],
         "x": 274,
-        "y": 699,
-        "w": 682,
+        "y": 719,
+        "w": 662,
         "h": 82
     },
     {
@@ -66,20 +66,21 @@
             "5cdbc640bc07c180",
             "fda7f0b5c35bd1ec",
             "3348f80444783827",
-            "0ca8a33dcf678937",
-            "0f4f9771d9306c17",
-            "8ac68e6adda430f5",
-            "6747b4d5d98c099c",
-            "5a14c7b3975756d8",
-            "840d8352c2abbfc5",
-            "4061ac236e8fd02b",
             "3685bf11d6d6de5d",
-            "a2a899011eb7ace4"
+            "a2a899011eb7ace4",
+            "238afa6bbdad0917",
+            "ce0338f36abab6ac",
+            "4dffcc13cdbaaf65",
+            "e24fed40795f5d50",
+            "4b20651705739bfc",
+            "d93c15a4ccae530f",
+            "ce9987f426475be6",
+            "c7588432a07117b7"
         ],
         "x": 274,
-        "y": 339,
+        "y": 319,
         "w": 1052,
-        "h": 322
+        "h": 362
     },
     {
         "id": "ae0e3962c1f8aadc",
@@ -468,7 +469,7 @@
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
         "x": 470,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "33a731c6dbd278f7",
@@ -500,7 +501,7 @@
         "repair": false,
         "outputs": 2,
         "x": 740,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
                 "fda7f0b5c35bd1ec"
@@ -522,10 +523,10 @@
         "linkType": "static",
         "timeout": "30",
         "x": 1210,
-        "y": 440,
+        "y": 420,
         "wires": [
             [
-                "0ca8a33dcf678937"
+                "ce0338f36abab6ac"
             ]
         ]
     },
@@ -550,7 +551,7 @@
         "to": "",
         "reg": false,
         "x": 1020,
-        "y": 420,
+        "y": 400,
         "wires": [
             [
                 "5cdbc640bc07c180"
@@ -578,262 +579,10 @@
         "to": "",
         "reg": false,
         "x": 1010,
-        "y": 460,
+        "y": 440,
         "wires": [
             [
                 "5cdbc640bc07c180"
-            ]
-        ]
-    },
-    {
-        "id": "0ca8a33dcf678937",
-        "type": "smeFormSetup",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "connector": "f9adc5c8242ed986",
-        "name": "",
-        "saveLocation": "#:(file)::slotSelectionForm",
-        "saveLocationType": "flow",
-        "submitEnabled": "1",
-        "retainStatus": "0",
-        "submitText": "Activate",
-        "submitTextType": "str",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "",
-        "channelIdType": "str",
-        "receiverType": "none",
-        "refName": "slotSelectionForm",
-        "refNameType": "str",
-        "x": 470,
-        "y": 520,
-        "wires": [
-            [
-                "0f4f9771d9306c17"
-            ]
-        ]
-    },
-    {
-        "id": "0f4f9771d9306c17",
-        "type": "smeFormComponent",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "name": "Available Slots label",
-        "reference": "availableSlots",
-        "referenceType": "str",
-        "component": "label",
-        "title": "Available Slots",
-        "titleType": "str",
-        "required": "true",
-        "requiredType": "bool",
-        "text": "",
-        "textType": "str",
-        "verticalList": "true",
-        "verticalListType": "bool",
-        "buttons": [],
-        "choices": [],
-        "choiceSelectionMode": "list",
-        "switchValue": "false",
-        "switchValueType": "bool",
-        "sliderMin": 0,
-        "sliderMinType": "num",
-        "sliderMax": 10,
-        "sliderMaxType": "num",
-        "sliderStep": 0,
-        "sliderStepType": "num",
-        "sliderValue": 0,
-        "sliderValueType": "num",
-        "actionButtonTitle": "Select",
-        "actionButtonTitleType": "str",
-        "multiSelection": "false",
-        "multiSelectionType": "bool",
-        "bucketFilter": "all",
-        "x": 760,
-        "y": 520,
-        "wires": [
-            [
-                "4061ac236e8fd02b"
-            ]
-        ]
-    },
-    {
-        "id": "8ac68e6adda430f5",
-        "type": "smeMessage",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "name": "Form Message",
-        "message": "form",
-        "text": "This is a text message.",
-        "textType": "str",
-        "html": "<b>This is an html message</b>",
-        "htmlType": "str",
-        "fileIds": "",
-        "fileIdsType": "str",
-        "contactIds": "",
-        "contactIdsType": "str",
-        "title": "MyTitle",
-        "titleType": "str",
-        "description": "",
-        "descriptionType": "str",
-        "start": 0,
-        "startType": "num",
-        "end": 0,
-        "endType": "num",
-        "allDay": "false",
-        "allDayType": "bool",
-        "locationName": "myLocation",
-        "locationNameType": "str",
-        "latitude": "",
-        "latitudeType": "str",
-        "longitude": "",
-        "longitudeType": "str",
-        "url": "",
-        "urlType": "str",
-        "enableFullScreenView": "1",
-        "viewSize": "1:2",
-        "channelId": "",
-        "channelIdType": "str",
-        "tunnelId": "",
-        "tunnelIdType": "str",
-        "formLocation": "#:(file)::slotSelectionForm",
-        "formLocationType": "flow",
-        "x": 400,
-        "y": 580,
-        "wires": [
-            [
-                "5a14c7b3975756d8"
-            ]
-        ]
-    },
-    {
-        "id": "6747b4d5d98c099c",
-        "type": "smeSender",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "connector": "f9adc5c8242ed986",
-        "async": "0",
-        "name": "",
-        "actionName": "channel_message_send",
-        "actionText": "Channel - Send Message",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "messageId": "",
-        "messageIdType": "str",
-        "limit": 0,
-        "limitType": "num",
-        "recipientIds": "",
-        "recipientIdsType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "#:(file)::bookingsAdminChannelId",
-        "channelIdType": "flow",
-        "title": "",
-        "titleType": "str",
-        "saveLocation": "#:(file)::slotSelectionFormMessageId",
-        "saveLocationType": "flow",
-        "saveRequestIdLocation": "savedRequestId",
-        "saveRequestIdLocationType": "flow",
-        "cameraOptions": [],
-        "cameraList": [],
-        "logToConsole": true,
-        "x": 910,
-        "y": 580,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5a14c7b3975756d8",
-        "type": "switch",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "name": "Msg Not Exists?",
-        "property": "#:(file)::slotSelectionFormMessageId",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "null"
-            },
-            {
-                "t": "else"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 600,
-        "y": 580,
-        "wires": [
-            [
-                "6747b4d5d98c099c"
-            ],
-            [
-                "840d8352c2abbfc5"
-            ]
-        ]
-    },
-    {
-        "id": "840d8352c2abbfc5",
-        "type": "smeSender",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "connector": "f9adc5c8242ed986",
-        "async": "1",
-        "name": "",
-        "actionName": "channel_message_update",
-        "actionText": "Channel - Update Message",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "messageId": "#:(file)::slotSelectionFormMessageId",
-        "messageIdType": "flow",
-        "limit": 0,
-        "limitType": "num",
-        "recipientIds": "",
-        "recipientIdsType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "#:(file)::bookingsAdminChannelId",
-        "channelIdType": "flow",
-        "title": "",
-        "titleType": "str",
-        "saveLocation": "#:(file)::slotSelectionFormMessageId",
-        "saveLocationType": "flow",
-        "saveRequestIdLocation": "savedRequestId",
-        "saveRequestIdLocationType": "flow",
-        "cameraOptions": [],
-        "cameraList": [],
-        "logToConsole": true,
-        "x": 920,
-        "y": 620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "4061ac236e8fd02b",
-        "type": "function",
-        "z": "904e53bf68e45530",
-        "g": "157681f477712096",
-        "name": "Modify Slot Selection Form Options",
-        "func": "let formComponents = flow.get(\"slotSelectionForm\", \"file\").formComponents;\nlet foundSlots = msg.foundSlots;\nlet config = msg.config;\n\nif (formComponents !== undefined) {\n    foundSlots.forEach(function(slotDay) {\n        let currentDay = slotDay.day;\n        let currentFormComponent = {\n            refName: `slotsToActivate_${currentDay}`,\n            formComponentType: 'multichoice',\n            title: `${currentDay}`,\n            requiredSelection: false,\n            options: []\n        };\n        slotDay.slots.forEach(function(slot) {\n            let status = \"\";\n            if (slot.enabled === false) {\n                status = \"INACTIVE\";\n            } else if (slot.status === \"free\") {\n                status = \"ACTIVE\"\n            } else if (slot.status === \"booked\") {\n                status = \"BOOKED\"\n            }\n            currentFormComponent.options.push({\n               name: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')} - ${status}`,\n               value: slot.id\n            });               \n        });\n        formComponents.push(currentFormComponent);\n    });\n}\n\nreturn msg;\n\n//_${currentDay}",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "moment",
-                "module": "moment-timezone"
-            }
-        ],
-        "x": 1020,
-        "y": 520,
-        "wires": [
-            [
-                "8ac68e6adda430f5"
             ]
         ]
     },
@@ -929,31 +678,10 @@
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
         "x": 450,
-        "y": 740,
+        "y": 760,
         "wires": [
             [
-                "f87cd72d4b2985d1"
-            ]
-        ]
-    },
-    {
-        "id": "f87cd72d4b2985d1",
-        "type": "function",
-        "z": "904e53bf68e45530",
-        "g": "cfe97aa71b331f1a",
-        "name": "Extract activated slots",
-        "func": "let activatedSlots = [];\nfor (const [key, value] of Object.entries(msg)) {\n  if (key.includes('slotsToActivate')) {\n    let day = key.split('_')[1];\n    value.forEach(function(slotId) {\n      activatedSlots.push(\n        {\n          day: day,\n          id: slotId\n        }\n      );\n    });\n\n  }\n}\n\nmsg = {\n  activatedSlots: activatedSlots\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 740,
-        "y": 740,
-        "wires": [
-            [
-                "2d5745409117427f"
+                "4c4858155a06c32f"
             ]
         ]
     },
@@ -967,8 +695,8 @@
         "links": [
             "3a87f0811eb3ce0f"
         ],
-        "x": 915,
-        "y": 740,
+        "x": 895,
+        "y": 760,
         "wires": []
     },
     {
@@ -985,7 +713,7 @@
         "finalize": "",
         "libs": [],
         "x": 790,
-        "y": 380,
+        "y": 360,
         "wires": [
             []
         ]
@@ -1020,7 +748,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 380,
+        "y": 360,
         "wires": [
             [
                 "33a731c6dbd278f7"
@@ -1041,6 +769,328 @@
             [
                 "0599cef7fdc742e0",
                 "fd827db8266434cc"
+            ]
+        ]
+    },
+    {
+        "id": "ce0338f36abab6ac",
+        "type": "smeFormSetup",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "#:(file)::slotSelectionForm",
+        "saveLocationType": "flow",
+        "submitEnabled": "1",
+        "retainStatus": "0",
+        "submitText": "Activate",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "receiverType": "none",
+        "refName": "slotSelectionForm",
+        "refNameType": "str",
+        "x": 470,
+        "y": 480,
+        "wires": [
+            [
+                "4dffcc13cdbaaf65"
+            ]
+        ]
+    },
+    {
+        "id": "4dffcc13cdbaaf65",
+        "type": "smeFormComponent",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "name": "Available Slots label",
+        "reference": "availableSlots",
+        "referenceType": "str",
+        "component": "label",
+        "title": "Available Slots",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "eventsDisplayMode": "list",
+        "events": "[]",
+        "eventsType": "json",
+        "x": 760,
+        "y": 480,
+        "wires": [
+            [
+                "238afa6bbdad0917"
+            ]
+        ]
+    },
+    {
+        "id": "e24fed40795f5d50",
+        "type": "smeMessage",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "name": "Form Message",
+        "message": "form",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<b>This is an html message</b>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "#:(file)::slotSelectionForm",
+        "formLocationType": "flow",
+        "x": 420,
+        "y": 600,
+        "wires": [
+            [
+                "d93c15a4ccae530f"
+            ]
+        ]
+    },
+    {
+        "id": "4b20651705739bfc",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_message_send",
+        "actionText": "Channel - Send Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::slotSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": true,
+        "x": 910,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d93c15a4ccae530f",
+        "type": "switch",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "name": "Msg Not Exists?",
+        "property": "#:(file)::slotSelectionFormMessageId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 620,
+        "y": 600,
+        "wires": [
+            [
+                "4b20651705739bfc"
+            ],
+            [
+                "ce9987f426475be6"
+            ]
+        ]
+    },
+    {
+        "id": "ce9987f426475be6",
+        "type": "smeSender",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "connector": "f9adc5c8242ed986",
+        "async": "1",
+        "name": "",
+        "actionName": "channel_message_update",
+        "actionText": "Channel - Update Message",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "#:(file)::slotSelectionFormMessageId",
+        "messageIdType": "flow",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "#:(file)::slotSelectionFormMessageId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": true,
+        "x": 920,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c7588432a07117b7",
+        "type": "smeFormComponent",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "name": "",
+        "reference": "slotsCalendar",
+        "referenceType": "str",
+        "component": "eventpicker",
+        "title": "Choose Slot(s) to activate",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "true",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "eventsDisplayMode": "list",
+        "events": "calendarEvents",
+        "eventsType": "msg",
+        "x": 1020,
+        "y": 520,
+        "wires": [
+            [
+                "e24fed40795f5d50"
+            ]
+        ]
+    },
+    {
+        "id": "238afa6bbdad0917",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "g": "157681f477712096",
+        "name": "Generate Events for picker",
+        "func": "let foundSlots = msg.foundSlots;\nlet config = msg.config;\n\nlet events = [];\n\n\nfoundSlots.forEach(function(slotDay) {\n    slotDay.slots.forEach(function(slot) {\n        let status = \"\";\n        if (slot.enabled === false) {\n            status = \"INACTIVE\";\n        } else if (slot.status === \"free\") {\n            status = \"ACTIVE\"\n        } else if (slot.status === \"booked\") {\n            status = \"BOOKED\"\n        }\n        events.push({\n            id: slot.id,\n            start: slot.start,\n            title: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')}`,\n            description: `${status}`,\n            additionalInfo: {\n                day: slotDay.day,\n                slotId: slot.id\n            }\n        });             \n    });\n});\n\nmsg.calendarEvents = events;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 1020,
+        "y": 480,
+        "wires": [
+            [
+                "c7588432a07117b7"
+            ]
+        ]
+    },
+    {
+        "id": "4c4858155a06c32f",
+        "type": "function",
+        "z": "904e53bf68e45530",
+        "g": "cfe97aa71b331f1a",
+        "name": "Extract activated slots",
+        "func": "let activatedSlots = [];\n\nif (Array.isArray(msg.slotsCalendar)) {\n  msg.slotsCalendar.forEach(function(slotToActivate) {\n    activatedSlots.push({\n      day: slotToActivate.additionalInfo.day,\n      id: slotToActivate.additionalInfo.slotId\n    })\n  })\n}\n\nmsg = {\n  activatedSlots: activatedSlots\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 760,
+        "wires": [
+            [
+                "2d5745409117427f"
             ]
         ]
     },

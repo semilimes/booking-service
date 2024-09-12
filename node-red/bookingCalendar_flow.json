@@ -13,12 +13,12 @@
         "z": "1636b6e86ca6c5aa",
         "name": "Stripe APIs test",
         "style": {
-            "label": true
+            "label": true,
+            "stroke": "#ffff3f",
+            "fill": "#ffffbf",
+            "fill-opacity": "0.45"
         },
         "nodes": [
-            "6dd148f48fac0098",
-            "2c85803f61284b56",
-            "c1df3f923e81ac9a",
             "f96b50318c763049",
             "2ded70a5ab54e519",
             "9f6a9d21086b7f15",
@@ -29,15 +29,16 @@
             "3b1851c1e606414f",
             "599f33ddaf3d4224",
             "2fe2a4b2f84b0690",
+            "ce953793e2bdced6",
+            "a0a4030e2a0d869f",
             "74fd123ea5e2a4d4",
             "06308bdde527f0dd",
-            "a0a4030e2a0d869f",
             "c4b7b70f1a77bc4e"
         ],
-        "x": 74,
-        "y": 1519,
-        "w": 1112,
-        "h": 302
+        "x": 168,
+        "y": 1799,
+        "w": 1038,
+        "h": 1008
     },
     {
         "id": "1434cf2e8e9a87e4",
@@ -51,12 +52,14 @@
             "64fe13784fafd40d",
             "d3cd6627337a14b0",
             "af72f685b214411d",
-            "0275566ffdfa0730"
+            "0275566ffdfa0730",
+            "abb7e21d241eb927",
+            "8a23b5542242e54d"
         ],
-        "x": 74,
-        "y": 39,
-        "w": 752,
-        "h": 142
+        "x": 194,
+        "y": 159,
+        "w": 852,
+        "h": 162
     },
     {
         "id": "05485d9baee65de4",
@@ -78,8 +81,8 @@
             "49fa7960980091ba",
             "99e9320ceeefe1fe"
         ],
-        "x": 74,
-        "y": 599,
+        "x": 354,
+        "y": 719,
         "w": 832,
         "h": 202
     },
@@ -98,12 +101,13 @@
             "cbc84ea73a270c12",
             "d594ef9358fbd8db",
             "a7c761eb01d5ed03",
-            "7c61b83dba3b9028"
+            "7c61b83dba3b9028",
+            "eb06be5a25e37ea8"
         ],
-        "x": 74,
-        "y": 419,
-        "w": 832,
-        "h": 162
+        "x": 194,
+        "y": 519,
+        "w": 992,
+        "h": 182
     },
     {
         "id": "b50c8240d15a75d8",
@@ -119,11 +123,12 @@
             "69af6993fb26ec8b",
             "ea8f349828502546",
             "0f364a55a275633e",
-            "7da8c8c966065a91"
+            "7da8c8c966065a91",
+            "504d7b3d1dc79fb4"
         ],
-        "x": 74,
-        "y": 819,
-        "w": 692,
+        "x": 194,
+        "y": 939,
+        "w": 732,
         "h": 202
     },
     {
@@ -145,12 +150,16 @@
             "ba2dfae702f57568",
             "59a5844d6b8d753b",
             "155ceb2f3faed43c",
-            "b0e0271cbe0117ed"
+            "b0e0271cbe0117ed",
+            "73c72fe7ade25524",
+            "ee87a7f27ead71d9",
+            "36bc77ce3846b77f",
+            "07bbb657d439c243"
         ],
-        "x": 74,
-        "y": 1119,
-        "w": 1112,
-        "h": 202
+        "x": 194,
+        "y": 1239,
+        "w": 1272,
+        "h": 342
     },
     {
         "id": "a8aa998e429bd3ce",
@@ -169,9 +178,9 @@
             "58f86925810cbe59",
             "8dad9a578763bd4d"
         ],
-        "x": 74,
-        "y": 1339,
-        "w": 722,
+        "x": 194,
+        "y": 1619,
+        "w": 712,
         "h": 122
     },
     {
@@ -186,8 +195,8 @@
             "b0bec7a3b4683781",
             "57d98e80c3c91f76"
         ],
-        "x": 794,
-        "y": 819,
+        "x": 934,
+        "y": 939,
         "w": 312,
         "h": 82
     },
@@ -205,142 +214,66 @@
             "b13af975c5bb5d10",
             "4905571c09f0096a"
         ],
-        "x": 74,
-        "y": 239,
+        "x": 194,
+        "y": 359,
         "w": 1012,
         "h": 82
     },
     {
-        "id": "64fe13784fafd40d",
-        "type": "inject",
+        "id": "ce953793e2bdced6",
+        "type": "group",
         "z": "1636b6e86ca6c5aa",
-        "g": "1434cf2e8e9a87e4",
-        "name": "Reset Calendar",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 200,
-        "y": 80,
-        "wires": [
-            [
-                "d3cd6627337a14b0",
-                "0275566ffdfa0730"
-            ]
-        ]
-    },
-    {
-        "id": "d3cd6627337a14b0",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "1434cf2e8e9a87e4",
-        "name": "Func definitions - Create Calendar",
-        "func": "// Example usage\n//const config = flow.get(\"functions\",\"file\").getDefaultSlotConfig();\n\nconst accountId = env.get(\"SME_ACCOUNT_ID\");\n\nlet calendar = flow.get(\"functions\",\"file\").generateEmptyCalendar(accountId);\n\n//flow.get(\"functions\",\"file\").addDaySlots(calendar, \"2024-08-01\", config);\n\nflow.set(\"bookingCalendar\", calendar, \"file\");\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\nlet functions = {\n    generateRandomGuid: function generateRandomGuid() {\n        // Generate a random GUID\n        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {\n            var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);\n            return v.toString(16);\n        });\n    },\n    generateEmptyCalendar: function generateEmptyCalendar(accountId) {\n        return {\n            calendarId: flow.get(\"functions\", \"file\").generateRandomGuid(),\n            calendarAdmin: accountId,\n            days: []\n        }\n    },\n    generateDaySlots: function generateDaySlots(day, config) {\n        const { startTime, endTime, slotDuration, pauseDuration, timezone } = config;\n\n        // Create a new Date object for the start time of the specific day\n        //let currentStartTime = new Date(`${day}T${startTime}:00`);\n        //let currentEndTime = new Date(`${day}T${endTime}:00`);\n        let currentStartTime = moment.tz(`${day} ${startTime}`, timezone);\n        let currentEndTime = moment.tz(`${day} ${endTime}`, timezone);\n        // Initialize an array to hold the slots for the day\n        let slots = [];\n\n        // Loop to create time slots for the specific day\n        while (currentStartTime < currentEndTime) {\n            // Add the current slot to the slots array\n            slots.push({\n                id: flow.get(\"functions\", \"file\").generateRandomGuid(), // Generate a random GUID for the slot ID\n                start: parseInt(moment(currentStartTime).format('x')), // Convert to epoch time in milliseconds\n                end: parseInt(moment(currentStartTime).add(slotDuration, 'minutes').format('x')), // Convert to epoch time in milliseconds\n                status: \"free\",\n                enabled: false,\n                paymentUrl: \"\",\n                bookingInfo: {}\n            });\n\n            // Increment the current start time by the slot duration and the pause duration\n            currentStartTime = moment(currentStartTime).add(slotDuration + pauseDuration, 'minutes');\n        }\n\n        // Return the day object with the slots\n        return {\n            day: day,\n            slots: slots\n        };\n    },\n    addDaySlots: function addDaySlots(calendar, day, config) {\n        // Check if the day is already in the calendar\n        const existingDay = calendar.days.find(d => d.day === day);\n        if (existingDay) {\n            throw new Error(\"Day already exists in the calendar.\");\n        }\n\n        // Generate slots for the specific day\n        const newDaySlots = flow.get(\"functions\", \"file\").generateDaySlots(day, config);\n\n        // Add the new day with its slots to the calendar's days array\n        calendar.days.push(newDaySlots);\n        return calendar.days.find(d => d.day === day);\n    },\n    getDefaultSlotConfig: function getDefaultSlotConfig() {\n        return {\n            startTime: \"09:00\",\n            endTime: \"15:00\",\n            slotDuration: 10,\n            pauseDuration: 5,\n            timezone: 'Europe/Zurich'\n        }\n    }\n}\n\nflow.set(\"functions\", functions, \"file\");",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "moment",
-                "module": "moment-timezone"
-            }
-        ],
-        "x": 460,
-        "y": 80,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "ef48733eea4aeb30",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "Activate Slot in Database",
-        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\",\"file\").getDefaultSlotConfig();\n\nlet calDay = calendar.days.find(d => d.day === msg.payload.day);\n\nlet slot = calDay.slots.find(s => s.id === msg.payload.id);\n\nif (slot !== undefined && slot.enabled == false) {\n    slot.enabled = true;\n    msg.stripe = {\n        day: calDay.day,\n        slotStart: moment(slot.start).tz(config.timezone).format(\"HH:mm\"),\n        slotEnd: moment(slot.end).tz(config.timezone).format(\"HH:mm\"),\n        slotId: slot.id\n    }\n    \n}\n\nmsg.currentSlot = {\n    day: msg.payload.day,\n    id: msg.payload.id\n}\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "moment",
-                "module": "moment-timezone"
-            }
-        ],
-        "x": 210,
-        "y": 540,
-        "wires": [
-            [
-                "d594ef9358fbd8db",
-                "90582338901be719"
-            ]
-        ]
-    },
-    {
-        "id": "6dd148f48fac0098",
-        "type": "debug",
-        "z": "1636b6e86ca6c5aa",
-        "d": true,
         "g": "e80572384e932621",
-        "name": "debug 125",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 710,
-        "y": 1740,
-        "wires": []
-    },
-    {
-        "id": "2c85803f61284b56",
-        "type": "inject",
-        "z": "1636b6e86ca6c5aa",
-        "d": true,
-        "g": "e80572384e932621",
-        "name": "Get Payment Links",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
+        "name": "Deactivate all Stripe objects!",
+        "style": {
+            "stroke": "#ff0000",
+            "label": true,
+            "fill": "#ffbfbf",
+            "color": "#ff0000",
+            "fill-opacity": "0.49"
+        },
+        "nodes": [
+            "6dd148f48fac0098",
+            "2c85803f61284b56",
+            "c1df3f923e81ac9a",
+            "ecfdaaf63607daaf",
+            "0cc5a47bc480f753",
+            "d9d48bbf44613c01",
+            "56d9d970e73ca7b0",
+            "3de14dbddb7f5137",
+            "5aaf99b8f3652217",
+            "af21e859fb453172",
+            "840122f48c1f8c16",
+            "cf3b9ffd3e6fcdb6",
+            "c1ebf484e8eb0722",
+            "e2b2111b02b4b965",
+            "2af83eb8369a1eb9",
+            "e919a3ea5e2f3056",
+            "86815fd2bfc62443",
+            "44f320d8af80c019",
+            "e97d63043a01d5a8",
+            "c5a3fc23f7bb3f60",
+            "4be38d07d7f1e5a3",
+            "3988d7f936792f31",
+            "c507b8c4f0a95c7d",
+            "856c7815e7499a59",
+            "0a911ab46e35005e",
+            "6a70f5941bea7552",
+            "b4df5580cf5f3a58",
+            "c55f23e93f43d42d",
+            "b6dae55ed2c8a515",
+            "13dcd6e941748191",
+            "a8c8d07947283ab1",
+            "036a10c08874981f",
+            "eea007aad87deb87",
+            "efc6da0a3d82855d",
+            "b58f7d3b1f0ed03a",
+            "5d8c85ad0a2a403c"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 210,
-        "y": 1740,
-        "wires": [
-            [
-                "c1df3f923e81ac9a"
-            ]
-        ]
+        "x": 194,
+        "y": 1999,
+        "w": 952,
+        "h": 782
     },
     {
         "id": "8687cea8bae0272e",
@@ -349,8 +282,8 @@
         "name": "",
         "scope": null,
         "uncaught": false,
-        "x": 940,
-        "y": 120,
+        "x": 1160,
+        "y": 220,
         "wires": [
             [
                 "4856635b3e79819c"
@@ -370,20 +303,96 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1110,
-        "y": 120,
+        "x": 1170,
+        "y": 260,
         "wires": []
+    },
+    {
+        "id": "7dd951609df72d43",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "name": "Update Slot with booking info",
+        "func": "const day = msg.payload.day;\nconst slotId = msg.payload.slotId;\nconst accountId = msg.payload.clientReferenceId;\nconst customerDetails = msg.customerDetails;\n\nlet calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\", \"file\").getDefaultSlotConfig();\n\nlet calDay = calendar.days.find(d => d.day == day);\n\nlet slot = calDay.slots.find(s => s.id == slotId);\n\nif (slot !== undefined) {\n    slot.status = \"booked\";\n    slot.bookingInfo.email = customerDetails.email || \"\"; \n    slot.bookingInfo.name = customerDetails.name || \"\";\n    slot.bookingInfo.accountId = accountId;\n\n    //enrich msg.payload for further processing\n    msg.payload.slotStart = moment(slot.start).tz(config.timezone).format(\"HH:mm\");\n    msg.payload.slotEnd = moment(slot.end).tz(config.timezone).format(\"HH:mm\");\n    msg.payload.accountId = msg.payload.clientReferenceId;\n\n    msg.payload.slotStartTimestamp = slot.start;\n    msg.payload.slotEndTimestamp = slot.end;\n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 320,
+        "y": 1200,
+        "wires": [
+            [
+                "a84c19f281937aa9",
+                "e05ccde0dd25de36"
+            ]
+        ]
+    },
+    {
+        "id": "6dd148f48fac0098",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 125",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 2040,
+        "wires": []
+    },
+    {
+        "id": "2c85803f61284b56",
+        "type": "inject",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Get Payment Links",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 330,
+        "y": 2040,
+        "wires": [
+            [
+                "ecfdaaf63607daaf"
+            ]
+        ]
     },
     {
         "id": "c1df3f923e81ac9a",
         "type": "http request",
         "z": "1636b6e86ca6c5aa",
         "d": true,
-        "g": "e80572384e932621",
-        "name": "GET Payment Links",
+        "g": "ce953793e2bdced6",
+        "name": "GET (Active) Payment Links",
         "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
+        "ret": "obj",
+        "paytoqs": "query",
         "url": "https://api.stripe.com/v1/payment_links",
         "tls": "",
         "persist": false,
@@ -391,12 +400,20 @@
         "insecureHTTPParser": false,
         "authType": "basic",
         "senderr": false,
-        "headers": [],
-        "x": 460,
-        "y": 1740,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 780,
+        "y": 2040,
         "wires": [
             [
-                "6dd148f48fac0098"
+                "6dd148f48fac0098",
+                "0cc5a47bc480f753"
             ]
         ]
     },
@@ -415,8 +432,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
-        "y": 1600,
+        "x": 770,
+        "y": 1880,
         "wires": []
     },
     {
@@ -442,8 +459,8 @@
         "topic": "",
         "payload": "{\"currency\":\"eur\",\"unit_amount\":1000,\"product_data[name]\":\"Consultation Slot\",\"product_data[description]\":\"Day: 2024-08-14 Time: 09:10\"}",
         "payloadType": "json",
-        "x": 210,
-        "y": 1600,
+        "x": 330,
+        "y": 1880,
         "wires": [
             [
                 "9f6a9d21086b7f15"
@@ -458,7 +475,7 @@
         "g": "e80572384e932621",
         "name": "POST Create Price",
         "method": "POST",
-        "ret": "txt",
+        "ret": "obj",
         "paytoqs": "ignore",
         "url": "https://api.stripe.com/v1/prices",
         "tls": "",
@@ -475,8 +492,8 @@
                 "valueValue": "application/x-www-form-urlencoded"
             }
         ],
-        "x": 430,
-        "y": 1600,
+        "x": 550,
+        "y": 1880,
         "wires": [
             [
                 "f96b50318c763049"
@@ -498,8 +515,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1070,
-        "y": 1680,
+        "x": 1090,
+        "y": 1960,
         "wires": []
     },
     {
@@ -525,8 +542,8 @@
         "topic": "",
         "payload": "{\"line_items[0][price]\":\"price_1PmwluJkTnaBYatTplBVEh3a\",\"line_items[0][quantity]\":1}",
         "payloadType": "json",
-        "x": 220,
-        "y": 1680,
+        "x": 340,
+        "y": 1960,
         "wires": [
             [
                 "953ebe1c84f37acf"
@@ -541,7 +558,7 @@
         "g": "e80572384e932621",
         "name": "POST Create Payment Link",
         "method": "POST",
-        "ret": "txt",
+        "ret": "obj",
         "paytoqs": "ignore",
         "url": "https://api.stripe.com/v1/payment_links",
         "tls": "",
@@ -558,8 +575,8 @@
                 "valueValue": "application/x-www-form-urlencoded"
             }
         ],
-        "x": 740,
-        "y": 1680,
+        "x": 860,
+        "y": 1960,
         "wires": [
             [
                 "1cf7957961dd3db0"
@@ -573,15 +590,15 @@
         "d": true,
         "g": "e80572384e932621",
         "name": "Add metadata",
-        "func": "msg.payload[\"metadata[day]\"] = \"2024-08-14\";\nmsg.payload[\"metadata[slot_id]\"] = \"befc0496-7657-4a89-b27a-129718c6f590\"\n\nreturn msg;",
+        "func": "msg.payload[\"metadata[day]\"] = \"2024-08-14\";\nmsg.payload[\"metadata[slot_id]\"] = \"befc0496-7657-4a89-b27a-129718c6f590\";\nmsg.payload[\"restrictions[completed_sessions[limit]]\"] = 1;\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 480,
-        "y": 1680,
+        "x": 600,
+        "y": 1960,
         "wires": [
             [
                 "8f7f3ace5f4bc1c3"
@@ -603,8 +620,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
-        "y": 1560,
+        "x": 770,
+        "y": 1840,
         "wires": []
     },
     {
@@ -630,8 +647,8 @@
         "topic": "",
         "payload": "{\"name\":\"Consultation Slot 20240814_0910\",\"description\":\"Day: 2024-08-14  Time: 09:10\",\"default_price_data[currency]\":\"eur\",\"default_price_data[unit_amount]\":5000,\"metadata[day]\":\"2024-08-14\",\"metadata[slot_id]\":\"befc0496-7657-4a89-b27a-129718c6f590\"}",
         "payloadType": "json",
-        "x": 200,
-        "y": 1560,
+        "x": 320,
+        "y": 1840,
         "wires": [
             [
                 "2fe2a4b2f84b0690"
@@ -646,7 +663,7 @@
         "g": "e80572384e932621",
         "name": "POST Create Product",
         "method": "POST",
-        "ret": "txt",
+        "ret": "obj",
         "paytoqs": "ignore",
         "url": "https://api.stripe.com/v1/products",
         "tls": "",
@@ -663,309 +680,11 @@
                 "valueValue": "application/x-www-form-urlencoded"
             }
         ],
-        "x": 440,
-        "y": 1560,
+        "x": 560,
+        "y": 1840,
         "wires": [
             [
                 "3b1851c1e606414f"
-            ]
-        ]
-    },
-    {
-        "id": "7c66af4d11ad98ed",
-        "type": "http request",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "POST Create Product",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://api.stripe.com/v1/products",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "basic",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "Content-Type",
-                "keyValue": "",
-                "valueType": "other",
-                "valueValue": "application/x-www-form-urlencoded"
-            }
-        ],
-        "x": 480,
-        "y": 640,
-        "wires": [
-            [
-                "778ba76f554fae95"
-            ]
-        ]
-    },
-    {
-        "id": "90582338901be719",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Create Product Payload",
-        "func": "if (msg.stripe === undefined) {\n    return null;\n}\n\nmsg.payload = {\n    \"name\": `Consultation Slot ${msg.stripe.day}_${msg.stripe.slotStart}_${msg.stripe.slotEnd}`,\n    \"description\": `Day: ${msg.stripe.day} StartTime: ${msg.stripe.slotStart} EndTime: ${msg.stripe.slotEnd}`,\n    \"default_price_data[currency]\": \"eur\",\n    \"default_price_data[unit_amount]\": 5000,\n    \"metadata[day]\": `${msg.stripe.day}`,\n    \"metadata[slot_id]\": `${msg.stripe.slotId}`\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 210,
-        "y": 640,
-        "wires": [
-            [
-                "7c66af4d11ad98ed"
-            ]
-        ]
-    },
-    {
-        "id": "778ba76f554fae95",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Retrieve PriceId",
-        "func": "msg.stripe.priceId = msg.payload.default_price; \n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 180,
-        "y": 680,
-        "wires": [
-            [
-                "ae8937bf6744a87f"
-            ]
-        ]
-    },
-    {
-        "id": "ae8937bf6744a87f",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Create Payment Link Payload",
-        "func": "msg.headers = {};\n\nmsg.payload ={\n    \"line_items[0][price]\": `${msg.stripe.priceId}`,\n    \"line_items[0][quantity]\": 1,\n    \"metadata[day]\": `${msg.stripe.day}`,\n    \"metadata[slot_id]\": msg.stripe.slotId\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 680,
-        "wires": [
-            [
-                "d693b739c81ca3bf"
-            ]
-        ]
-    },
-    {
-        "id": "d693b739c81ca3bf",
-        "type": "http request",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "POST Create Payment Link",
-        "method": "POST",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "https://api.stripe.com/v1/payment_links",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "basic",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "Content-Type",
-                "keyValue": "",
-                "valueType": "other",
-                "valueValue": "application/x-www-form-urlencoded"
-            }
-        ],
-        "x": 760,
-        "y": 680,
-        "wires": [
-            [
-                "0848da01ad79be86"
-            ]
-        ]
-    },
-    {
-        "id": "0848da01ad79be86",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Retrieve PaymentLink Id",
-        "func": "msg.stripe.paymentLinkId = msg.payload.id; \n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 210,
-        "y": 720,
-        "wires": [
-            [
-                "8e4a1c4c3a45fcaa"
-            ]
-        ]
-    },
-    {
-        "id": "8e4a1c4c3a45fcaa",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Create Payment Link Payload",
-        "func": "msg.headers = {};\nmsg.url = `https://api.stripe.com/v1/payment_links/${msg.stripe.paymentLinkId}`;\nmsg.payload ={\n    \n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 470,
-        "y": 720,
-        "wires": [
-            [
-                "4604d7c5dff6e9d1"
-            ]
-        ]
-    },
-    {
-        "id": "4604d7c5dff6e9d1",
-        "type": "http request",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "GET Payment Link",
-        "method": "GET",
-        "ret": "obj",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "basic",
-        "senderr": false,
-        "headers": [],
-        "x": 730,
-        "y": 720,
-        "wires": [
-            [
-                "49fa7960980091ba"
-            ]
-        ]
-    },
-    {
-        "id": "49fa7960980091ba",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Retrieve PaymentLink Url",
-        "func": "msg.stripe.paymentLinkUrl = msg.payload.url; \n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 210,
-        "y": 760,
-        "wires": [
-            [
-                "99e9320ceeefe1fe"
-            ]
-        ]
-    },
-    {
-        "id": "99e9320ceeefe1fe",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "g": "05485d9baee65de4",
-        "name": "Update Slot with Stripe Info",
-        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet calDay = calendar.days.find(d => d.day === msg.currentSlot.day);\nlet slot = calDay.slots.find(s => s.id === msg.currentSlot.id);\n\nif (slot !== undefined) {\n    slot.paymentUrl = `${msg.stripe.paymentLinkUrl}`\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.\n",
-        "finalize": "",
-        "libs": [],
-        "x": 460,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "21d8847f9dbf66f7",
-        "type": "http in",
-        "z": "1636b6e86ca6c5aa",
-        "g": "b50c8240d15a75d8",
-        "name": "",
-        "url": "/stripe/confirmation",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 210,
-        "y": 860,
-        "wires": [
-            [
-                "c2973e6ba9602771",
-                "ea8f349828502546"
-            ]
-        ]
-    },
-    {
-        "id": "c2973e6ba9602771",
-        "type": "http response",
-        "z": "1636b6e86ca6c5aa",
-        "g": "b50c8240d15a75d8",
-        "name": "",
-        "statusCode": "200",
-        "headers": {},
-        "x": 520,
-        "y": 860,
-        "wires": []
-    },
-    {
-        "id": "06308bdde527f0dd",
-        "type": "http request",
-        "z": "1636b6e86ca6c5aa",
-        "d": true,
-        "g": "e80572384e932621",
-        "name": "POST Create Webhook",
-        "method": "POST",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "https://api.stripe.com/v1/webhook_endpoints",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "basic",
-        "senderr": false,
-        "headers": [
-            {
-                "keyType": "Content-Type",
-                "keyValue": "",
-                "valueType": "other",
-                "valueValue": "application/x-www-form-urlencoded"
-            }
-        ],
-        "x": 690,
-        "y": 1780,
-        "wires": [
-            [
-                "a0a4030e2a0d869f"
             ]
         ]
     },
@@ -992,11 +711,44 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 200,
-        "y": 1780,
+        "x": 320,
+        "y": 1920,
         "wires": [
             [
                 "c4b7b70f1a77bc4e"
+            ]
+        ]
+    },
+    {
+        "id": "06308bdde527f0dd",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "e80572384e932621",
+        "name": "POST Create Webhook",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "https://api.stripe.com/v1/webhook_endpoints",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 810,
+        "y": 1920,
+        "wires": [
+            [
+                "a0a4030e2a0d869f"
             ]
         ]
     },
@@ -1015,8 +767,640 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 1780,
+        "x": 1070,
+        "y": 1920,
+        "wires": []
+    },
+    {
+        "id": "c4b7b70f1a77bc4e",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "e80572384e932621",
+        "name": "Prepare data",
+        "func": "msg.payload = { \n    url: `${env.get(\"STRIPE_WEBHOOK\")}`,\n    \"enabled_events[]\":\"checkout.session.completed\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 1920,
+        "wires": [
+            [
+                "06308bdde527f0dd"
+            ]
+        ]
+    },
+    {
+        "id": "64fe13784fafd40d",
+        "type": "inject",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "name": "Reset Calendar",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "0275566ffdfa0730",
+                "abb7e21d241eb927"
+            ]
+        ]
+    },
+    {
+        "id": "d3cd6627337a14b0",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "name": "Func definitions - Create Calendar",
+        "func": "const accountId = env.get(\"SME_ACCOUNT_ID\");\n\nlet calendar = flow.get(\"functions\",\"file\").generateEmptyCalendar(accountId);\n\nflow.set(\"bookingCalendar\", calendar, \"file\");\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nlet functions = {\n    generateRandomGuid: function generateRandomGuid() {\n        // Generate a random GUID\n        return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {\n            var r = Math.random() * 16 | 0, v = c === 'x' ? r : (r & 0x3 | 0x8);\n            return v.toString(16);\n        });\n    },\n    generateEmptyCalendar: function generateEmptyCalendar(accountId) {\n        return {\n            calendarId: flow.get(\"functions\", \"file\").generateRandomGuid(),\n            calendarAdmin: accountId,\n            days: []\n        }\n    },\n    generateDaySlots: function generateDaySlots(day, config) {\n        const { startTime, endTime, slotDuration, pauseDuration, timezone } = config;\n\n        // Create a new Date object for the start time of the specific day\n        let currentStartTime = moment.tz(`${day} ${startTime}`, timezone);\n        let currentEndTime = moment.tz(`${day} ${endTime}`, timezone);\n        // Initialize an array to hold the slots for the day\n        let slots = [];\n\n        // Loop to create time slots for the specific day\n        while (currentStartTime < currentEndTime) {\n            // Add the current slot to the slots array\n            slots.push({\n                id: flow.get(\"functions\", \"file\").generateRandomGuid(), // Generate a random GUID for the slot ID\n                start: parseInt(moment(currentStartTime).format('x')), // Convert to epoch time in milliseconds\n                end: parseInt(moment(currentStartTime).add(slotDuration, 'minutes').format('x')), // Convert to epoch time in milliseconds\n                status: \"free\",\n                enabled: false,\n                paymentUrl: \"\",\n                bookingInfo: {}\n            });\n\n            // Increment the current start time by the slot duration and the pause duration\n            currentStartTime = moment(currentStartTime).add(slotDuration + pauseDuration, 'minutes');\n        }\n\n        // Return the day object with the slots\n        return {\n            day: day,\n            slots: slots\n        };\n    },\n    addDaySlots: function addDaySlots(calendar, day, config) {\n        // Check if the day is already in the calendar\n        const existingDay = calendar.days.find(d => d.day === day);\n        if (existingDay) {\n            throw new Error(\"Day already exists in the calendar.\");\n        }\n\n        // Generate slots for the specific day\n        const newDaySlots = flow.get(\"functions\", \"file\").generateDaySlots(day, config);\n\n        // Add the new day with its slots to the calendar's days array\n        calendar.days.push(newDaySlots);\n        return calendar.days.find(d => d.day === day);\n    },\n    getDefaultSlotConfig: function getDefaultSlotConfig() {\n        var slotConfig = flow.get(\"slotConfig\",\"file\");\n        if (typeof slotConfig === 'object' &&\n            slotConfig.hasOwnProperty('startTime') &&\n            slotConfig.hasOwnProperty('endTime') &&\n            slotConfig.hasOwnProperty('slotDuration') &&\n            slotConfig.hasOwnProperty('pauseDuration') &&\n            slotConfig.hasOwnProperty('timezone')) {\n                return slotConfig;\n            } else {\n                return {\n                    startTime: \"09:00\",\n                    endTime: \"15:00\",\n                    slotDuration: 10,\n                    pauseDuration: 5,\n                    timezone: 'Europe/Zurich'\n                }\n            }\n    }\n}\n\nflow.set(\"functions\", functions, \"file\");",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 880,
+        "y": 200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af72f685b214411d",
+        "type": "smeSender",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_create",
+        "actionText": "Channel - Create",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "title": "Bookings",
+        "titleType": "str",
+        "saveLocation": "#:(file)::bookingsChannelId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 840,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0275566ffdfa0730",
+        "type": "switch",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "name": "Channel Not Exists?",
+        "property": "#:(file)::bookingsChannelId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 540,
+        "y": 280,
+        "wires": [
+            [
+                "af72f685b214411d"
+            ]
+        ]
+    },
+    {
+        "id": "abb7e21d241eb927",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "name": "Set Slot Generation Config",
+        "rules": [
+            {
+                "t": "set",
+                "p": "#:(file)::slotConfig",
+                "pt": "flow",
+                "to": "{\"startTime\":\"11:00\",\"endTime\":\"14:00\",\"slotDuration\":30,\"pauseDuration\":15,\"timezone\":\"Europe/Zurich\"}",
+                "tot": "json"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 240,
+        "wires": [
+            [
+                "d3cd6627337a14b0"
+            ]
+        ]
+    },
+    {
+        "id": "8a23b5542242e54d",
+        "type": "comment",
+        "z": "1636b6e86ca6c5aa",
+        "g": "1434cf2e8e9a87e4",
+        "name": "Setup your config here 🔽",
+        "info": "",
+        "x": 570,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "7c66af4d11ad98ed",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "POST Create Product",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 760,
+        "y": 760,
+        "wires": [
+            [
+                "778ba76f554fae95"
+            ]
+        ]
+    },
+    {
+        "id": "90582338901be719",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Create Product Payload",
+        "func": "if (msg.stripe === undefined) {\n    return null;\n}\n\nmsg.url = `https://${env.get(\"STRIPE_KEY\")}@api.stripe.com/v1/products`\n\nmsg.payload = {\n    \"name\": `Consultation Slot ${msg.stripe.day}_${msg.stripe.slotStart}_${msg.stripe.slotEnd}`,\n    \"description\": `Day: ${msg.stripe.day} StartTime: ${msg.stripe.slotStart} EndTime: ${msg.stripe.slotEnd}`,\n    \"default_price_data[currency]\": \"eur\", //Change with your preferred currency symbol\n    \"default_price_data[unit_amount]\": 5000, //Change with your preferred amount. Please note that the last two digits are decimal, so 50.00 EUR is represented with 5000\n    \"metadata[day]\": `${msg.stripe.day}`,\n    \"metadata[slot_id]\": `${msg.stripe.slotId}`\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 760,
+        "wires": [
+            [
+                "7c66af4d11ad98ed"
+            ]
+        ]
+    },
+    {
+        "id": "778ba76f554fae95",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Retrieve PriceId",
+        "func": "msg.stripe.priceId = msg.payload.default_price; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 800,
+        "wires": [
+            [
+                "ae8937bf6744a87f"
+            ]
+        ]
+    },
+    {
+        "id": "ae8937bf6744a87f",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Create Payment Link Payload",
+        "func": "msg.headers = {};\n\nmsg.url = `https://${env.get(\"STRIPE_KEY\")}@api.stripe.com/v1/payment_links`\n\nmsg.payload ={\n    \"line_items[0][price]\": `${msg.stripe.priceId}`,\n    \"line_items[0][quantity]\": 1,\n    \"metadata[day]\": `${msg.stripe.day}`,\n    \"metadata[slot_id]\": msg.stripe.slotId,\n    \"restrictions[completed_sessions[limit]]\": 1\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 800,
+        "wires": [
+            [
+                "d693b739c81ca3bf"
+            ]
+        ]
+    },
+    {
+        "id": "d693b739c81ca3bf",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "POST Create Payment Link",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 1040,
+        "y": 800,
+        "wires": [
+            [
+                "0848da01ad79be86"
+            ]
+        ]
+    },
+    {
+        "id": "0848da01ad79be86",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Retrieve PaymentLink Id",
+        "func": "msg.stripe.paymentLinkId = msg.payload.id; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 840,
+        "wires": [
+            [
+                "8e4a1c4c3a45fcaa"
+            ]
+        ]
+    },
+    {
+        "id": "8e4a1c4c3a45fcaa",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Create Payment Link Payload",
+        "func": "msg.headers = {};\nmsg.url = `https://${env.get(\"STRIPE_KEY\")}@api.stripe.com/v1/payment_links/${msg.stripe.paymentLinkId}`;\nmsg.payload ={\n    \n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 840,
+        "wires": [
+            [
+                "4604d7c5dff6e9d1"
+            ]
+        ]
+    },
+    {
+        "id": "4604d7c5dff6e9d1",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "GET Payment Link",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [],
+        "x": 1010,
+        "y": 840,
+        "wires": [
+            [
+                "49fa7960980091ba"
+            ]
+        ]
+    },
+    {
+        "id": "49fa7960980091ba",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Retrieve PaymentLink Url",
+        "func": "msg.stripe.paymentLinkUrl = msg.payload.url; \n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 880,
+        "wires": [
+            [
+                "99e9320ceeefe1fe"
+            ]
+        ]
+    },
+    {
+        "id": "99e9320ceeefe1fe",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "05485d9baee65de4",
+        "name": "Update Slot with Stripe Info",
+        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet calDay = calendar.days.find(d => d.day === msg.currentSlot.day);\nlet slot = calDay.slots.find(s => s.id === msg.currentSlot.id);\n\nif (slot !== undefined) {\n    slot.paymentUrl = `${msg.stripe.paymentLinkUrl}`\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.\n",
+        "finalize": "",
+        "libs": [],
+        "x": 740,
+        "y": 880,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef48733eea4aeb30",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "Activate Slot in Database",
+        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\",\"file\").getDefaultSlotConfig();\n\nlet calDay = calendar.days.find(d => d.day === msg.payload.day);\n\nlet slot = calDay.slots.find(s => s.id === msg.payload.id);\n\nif (slot !== undefined && slot.enabled == false) {\n    slot.enabled = true;\n    msg.stripe = {\n        day: calDay.day,\n        slotStart: moment(slot.start).tz(config.timezone).format(\"HH:mm\"),\n        slotEnd: moment(slot.end).tz(config.timezone).format(\"HH:mm\"),\n        slotId: slot.id\n    }\n    \n}\n\nmsg.currentSlot = {\n    day: msg.payload.day,\n    id: msg.payload.id\n}\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 330,
+        "y": 660,
+        "wires": [
+            [
+                "d594ef9358fbd8db",
+                "90582338901be719"
+            ]
+        ]
+    },
+    {
+        "id": "3a87f0811eb3ce0f",
+        "type": "link in",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "in_activateBookingSlots",
+        "links": [
+            "2d5745409117427f"
+        ],
+        "x": 235,
+        "y": 560,
+        "wires": [
+            [
+                "a7c761eb01d5ed03"
+            ]
+        ]
+    },
+    {
+        "id": "7fbd6f99aac0062d",
+        "type": "split",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "Split each activated slot",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 550,
+        "y": 600,
+        "wires": [
+            [
+                "eb06be5a25e37ea8"
+            ]
+        ]
+    },
+    {
+        "id": "cbc84ea73a270c12",
+        "type": "delay",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 1090,
+        "y": 600,
+        "wires": [
+            [
+                "ef48733eea4aeb30"
+            ]
+        ]
+    },
+    {
+        "id": "d594ef9358fbd8db",
+        "type": "join",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "Join activated slots",
+        "mode": "auto",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 590,
+        "y": 660,
+        "wires": [
+            [
+                "7c61b83dba3b9028"
+            ]
+        ]
+    },
+    {
+        "id": "a7c761eb01d5ed03",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "Set ActivatedSlots",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "activatedSlots",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 310,
+        "y": 600,
+        "wires": [
+            [
+                "7fbd6f99aac0062d"
+            ]
+        ]
+    },
+    {
+        "id": "7c61b83dba3b9028",
+        "type": "link out",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "out_updateSearchResults",
+        "mode": "link",
+        "links": [
+            "c18fbb28249b4d77"
+        ],
+        "x": 985,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "eb06be5a25e37ea8",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "g": "5c7dd4488a217b5b",
+        "name": "Set Msg Rate to 100ms",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rate",
+                "pt": "msg",
+                "to": "100",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 810,
+        "y": 600,
+        "wires": [
+            [
+                "cbc84ea73a270c12"
+            ]
+        ]
+    },
+    {
+        "id": "21d8847f9dbf66f7",
+        "type": "http in",
+        "z": "1636b6e86ca6c5aa",
+        "g": "b50c8240d15a75d8",
+        "name": "",
+        "url": "/stripe/confirmation",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 330,
+        "y": 980,
+        "wires": [
+            [
+                "c2973e6ba9602771",
+                "ea8f349828502546"
+            ]
+        ]
+    },
+    {
+        "id": "c2973e6ba9602771",
+        "type": "http response",
+        "z": "1636b6e86ca6c5aa",
+        "g": "b50c8240d15a75d8",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 640,
+        "y": 980,
         "wires": []
     },
     {
@@ -1025,15 +1409,15 @@
         "z": "1636b6e86ca6c5aa",
         "g": "b50c8240d15a75d8",
         "name": "Extract PaymentLinkId",
-        "func": "let paymentLinkId = msg.payload.data.object.payment_link;\n\nmsg.url = `https://api.stripe.com/v1/payment_links/${paymentLinkId}`\n\nmsg.clientReferenceId = msg.payload.data.object.client_reference_id;\nreturn msg;",
+        "func": "let paymentLinkId = msg.payload.data.object.payment_link;\n\nmsg.url = `https://${env.get(\"STRIPE_KEY\")}@api.stripe.com/v1/payment_links/${paymentLinkId}`\n\nmsg.clientReferenceId = msg.payload.data.object.client_reference_id;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 200,
-        "y": 940,
+        "x": 560,
+        "y": 1060,
         "wires": [
             [
                 "0f364a55a275633e"
@@ -1058,11 +1442,11 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 600,
-        "y": 900,
+        "x": 720,
+        "y": 1020,
         "wires": [
             [
-                "69af6993fb26ec8b"
+                "504d7b3d1dc79fb4"
             ]
         ]
     },
@@ -1083,8 +1467,8 @@
         "authType": "basic",
         "senderr": false,
         "headers": [],
-        "x": 430,
-        "y": 940,
+        "x": 790,
+        "y": 1060,
         "wires": [
             [
                 "7da8c8c966065a91"
@@ -1104,8 +1488,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 210,
-        "y": 980,
+        "x": 330,
+        "y": 1100,
         "wires": [
             [
                 "7dd951609df72d43"
@@ -1113,28 +1497,23 @@
         ]
     },
     {
-        "id": "7dd951609df72d43",
+        "id": "504d7b3d1dc79fb4",
         "type": "function",
         "z": "1636b6e86ca6c5aa",
-        "name": "Update Slot with booking info",
-        "func": "const day = msg.payload.day;\nconst slotId = msg.payload.slotId;\nconst accountId = msg.payload.clientReferenceId;\n\nlet calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\", \"file\").getDefaultSlotConfig();\n\nlet calDay = calendar.days.find(d => d.day == day);\n\nlet slot = calDay.slots.find(s => s.id == slotId);\n\nif (slot !== undefined) {\n    slot.status = \"booked\";\n    slot.bookingInfo.email = \"CustomerEmail\"; \n    slot.bookingInfo.accountId = accountId;\n\n    //enrich msg.payload for further processing\n    msg.payload.slotStart = moment(slot.start).tz(config.timezone).format(\"HH:mm\");\n    msg.payload.slotEnd = moment(slot.end).tz(config.timezone).format(\"HH:mm\");\n    msg.payload.accountId = msg.payload.clientReferenceId;\n\n    msg.payload.slotStartTimestamp = slot.start;\n    msg.payload.slotEndTimestamp = slot.end;\n\n}\n\n\nreturn msg;",
+        "g": "b50c8240d15a75d8",
+        "name": "Extract Customer Details",
+        "func": "msg.customerDetails = {\n    email: msg.payload.data.object.customer_details.email,\n    name: msg.payload.data.object.customer_details.name\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
-        "initialize": "// Code added here will be run once\n// whenever the node is started.\n// Code added here will be run once\n// whenever the node is started.",
+        "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "moment",
-                "module": "moment-timezone"
-            }
-        ],
-        "x": 320,
-        "y": 1080,
+        "libs": [],
+        "x": 330,
+        "y": 1060,
         "wires": [
             [
-                "a84c19f281937aa9",
-                "e05ccde0dd25de36"
+                "69af6993fb26ec8b"
             ]
         ]
     },
@@ -1169,8 +1548,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1040,
-        "y": 1180,
+        "x": 1280,
+        "y": 1320,
         "wires": [
             []
         ]
@@ -1206,8 +1585,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 630,
-        "y": 1160,
+        "x": 750,
+        "y": 1280,
         "wires": [
             [
                 "f347b48b0ff96ae9"
@@ -1227,12 +1606,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 200,
-        "y": 1200,
+        "x": 320,
+        "y": 1320,
         "wires": [
             [
                 "a95c2efe12d485aa",
-                "b0e0271cbe0117ed"
+                "b0e0271cbe0117ed",
+                "73c72fe7ade25524",
+                "07bbb657d439c243"
             ]
         ]
     },
@@ -1249,12 +1630,12 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 1280,
+        "x": 500,
+        "y": 1500,
         "wires": [
             [
                 "7fa7d88402af78e1",
-                "155ceb2f3faed43c"
+                "ee87a7f27ead71d9"
             ]
         ]
     },
@@ -1276,8 +1657,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 160,
-        "y": 1280,
+        "x": 280,
+        "y": 1500,
         "wires": [
             [
                 "05b94234418d6c96"
@@ -1315,8 +1696,8 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1040,
-        "y": 1260,
+        "x": 1320,
+        "y": 1460,
         "wires": [
             []
         ]
@@ -1352,8 +1733,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 650,
-        "y": 1240,
+        "x": 790,
+        "y": 1460,
         "wires": [
             [
                 "96e51fb1b99a800c"
@@ -1401,8 +1782,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 770,
-        "y": 1200,
+        "x": 890,
+        "y": 1320,
         "wires": [
             [
                 "f347b48b0ff96ae9"
@@ -1424,10 +1805,10 @@
         "fileIdsType": "str",
         "contactIds": "",
         "contactIdsType": "str",
-        "title": "Patient visit",
-        "titleType": "str",
-        "description": "",
-        "descriptionType": "str",
+        "title": "payload.appointmentTitle",
+        "titleType": "msg",
+        "description": "payload.appointmentDescription",
+        "descriptionType": "msg",
         "start": "payload.slotStartTimestamp",
         "startType": "msg",
         "end": "payload.slotEndTimestamp",
@@ -1450,8 +1831,8 @@
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 770,
-        "y": 1280,
+        "x": 1130,
+        "y": 1540,
         "wires": [
             [
                 "96e51fb1b99a800c"
@@ -1476,8 +1857,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 600,
-        "y": 1280,
+        "x": 960,
+        "y": 1540,
         "wires": [
             [
                 "59a5844d6b8d753b"
@@ -1502,11 +1883,46 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 600,
-        "y": 1200,
+        "x": 720,
+        "y": 1320,
         "wires": [
             [
                 "ba2dfae702f57568"
+            ]
+        ]
+    },
+    {
+        "id": "73c72fe7ade25524",
+        "type": "link out",
+        "z": "1636b6e86ca6c5aa",
+        "g": "b9fef686bd4390da",
+        "name": "out_resetUserSession",
+        "mode": "link",
+        "links": [
+            "f8a032e8119e4ea6"
+        ],
+        "x": 675,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "ee87a7f27ead71d9",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "g": "b9fef686bd4390da",
+        "name": "Set Appointment details",
+        "func": "msg.payload.appointmentTitle = `Visit to ${msg.customerDetails?.name || \"patient\"}`;\nmsg.payload.appointmentDescription = `Patient Email for contact: ${msg.customerDetails?.email || \"not provided\"}`;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 1540,
+        "wires": [
+            [
+                "155ceb2f3faed43c"
             ]
         ]
     },
@@ -1517,8 +1933,8 @@
         "g": "a8aa998e429bd3ce",
         "name": "in_getBookingSlots",
         "links": [],
-        "x": 115,
-        "y": 1380,
+        "x": 235,
+        "y": 1660,
         "wires": [
             [
                 "4742a154b4dc7ac2"
@@ -1533,8 +1949,8 @@
         "name": "link out 1",
         "mode": "return",
         "links": [],
-        "x": 755,
-        "y": 1380,
+        "x": 865,
+        "y": 1660,
         "wires": []
     },
     {
@@ -1543,7 +1959,7 @@
         "z": "1636b6e86ca6c5aa",
         "g": "a8aa998e429bd3ce",
         "name": "Load existing or new day",
-        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\",\"file\").getDefaultSlotConfig();\n\nlet nextDays = msg.daysToReturn;\nlet startDate = moment.tz(msg.startDate, config.timezone);\n\nmsg.foundSlots = [];\n\nfor (var i = 0; i < nextDays; i++) {\n    let selectedDay = startDate.format('YYYY-MM-DD');\n    let calDay = calendar.days.find(d => d.day === selectedDay);\n    if (calDay === undefined) {\n        calDay = flow.get(\"functions\", \"file\").addDaySlots(calendar, selectedDay, config);\n    }\n    msg.foundSlots.push(calDay);\n    startDate.add(1, 'days');\n}\n\nmsg.config = config;\n\nreturn msg;\n",
+        "func": "let calendar = flow.get(\"bookingCalendar\",\"file\");\nlet config = flow.get(\"functions\",\"file\").getDefaultSlotConfig();\n\nlet nextDays = msg.daysToReturn;\n\n//Fallback to today if startDate is not defined\nlet startDate = \"\";\nif (msg.startDate) {\n    startDate = moment.tz(msg.startDate, config.timezone);\n} else {\n    startDate = moment.tz(config.timezone);\n}\n\n//Skip days if defined\nif (typeof msg.skipDays === 'number') {\n    startDate = startDate.add(msg.skipDays, 'days');\n}\n\nmsg.foundSlots = [];\n\nfor (var i = 0; i < nextDays; i++) {\n    let selectedDay = startDate.format('YYYY-MM-DD');\n    let calDay = calendar.days.find(d => d.day === selectedDay);\n    if (calDay === undefined) {\n        calDay = flow.get(\"functions\", \"file\").addDaySlots(calendar, selectedDay, config);\n    }\n    msg.foundSlots.push(calDay);\n    startDate.add(1, 'days');\n}\n\nmsg.config = config;\n\nreturn msg;\n",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
@@ -1555,8 +1971,8 @@
                 "module": "moment-timezone"
             }
         ],
-        "x": 500,
-        "y": 1380,
+        "x": 670,
+        "y": 1660,
         "wires": [
             [
                 "312ae5931f433921"
@@ -1568,7 +1984,7 @@
         "type": "switch",
         "z": "1636b6e86ca6c5aa",
         "g": "a8aa998e429bd3ce",
-        "name": "Days valid",
+        "name": "DaysToReturn valid?",
         "property": "daysToReturn",
         "propertyType": "msg",
         "rules": [
@@ -1581,148 +1997,13 @@
         "checkall": "true",
         "repair": false,
         "outputs": 1,
-        "x": 240,
-        "y": 1380,
+        "x": 380,
+        "y": 1660,
         "wires": [
             [
                 "a7d5dd74ddbd66e0"
             ]
         ]
-    },
-    {
-        "id": "3a87f0811eb3ce0f",
-        "type": "link in",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "in_activateBookingSlots",
-        "links": [
-            "2d5745409117427f"
-        ],
-        "x": 115,
-        "y": 460,
-        "wires": [
-            [
-                "a7c761eb01d5ed03"
-            ]
-        ]
-    },
-    {
-        "id": "7fbd6f99aac0062d",
-        "type": "split",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "Split each activated slot",
-        "splt": "\\n",
-        "spltType": "str",
-        "arraySplt": 1,
-        "arraySpltType": "len",
-        "stream": false,
-        "addname": "",
-        "x": 430,
-        "y": 500,
-        "wires": [
-            [
-                "cbc84ea73a270c12"
-            ]
-        ]
-    },
-    {
-        "id": "cbc84ea73a270c12",
-        "type": "delay",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "",
-        "pauseType": "rate",
-        "timeout": "5",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "2",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 640,
-        "y": 500,
-        "wires": [
-            [
-                "ef48733eea4aeb30"
-            ]
-        ]
-    },
-    {
-        "id": "d594ef9358fbd8db",
-        "type": "join",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "Join activated slots",
-        "mode": "auto",
-        "build": "array",
-        "property": "payload",
-        "propertyType": "msg",
-        "key": "topic",
-        "joiner": "\\n",
-        "joinerType": "str",
-        "accumulate": false,
-        "timeout": "",
-        "count": "",
-        "reduceRight": false,
-        "reduceExp": "",
-        "reduceInit": "",
-        "reduceInitType": "num",
-        "reduceFixup": "",
-        "x": 470,
-        "y": 540,
-        "wires": [
-            [
-                "7c61b83dba3b9028"
-            ]
-        ]
-    },
-    {
-        "id": "a7c761eb01d5ed03",
-        "type": "change",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "Set ActivatedSlots",
-        "rules": [
-            {
-                "t": "set",
-                "p": "payload",
-                "pt": "msg",
-                "to": "activatedSlots",
-                "tot": "msg",
-                "dc": true
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 190,
-        "y": 500,
-        "wires": [
-            [
-                "7fbd6f99aac0062d"
-            ]
-        ]
-    },
-    {
-        "id": "7c61b83dba3b9028",
-        "type": "link out",
-        "z": "1636b6e86ca6c5aa",
-        "g": "5c7dd4488a217b5b",
-        "name": "out_updateSearchResults",
-        "mode": "link",
-        "links": [
-            "c18fbb28249b4d77"
-        ],
-        "x": 865,
-        "y": 540,
-        "wires": []
     },
     {
         "id": "e242d7534c8d4c04",
@@ -1731,8 +2012,8 @@
         "g": "a8aa998e429bd3ce",
         "name": "in_getBookedSlot",
         "links": [],
-        "x": 115,
-        "y": 1420,
+        "x": 235,
+        "y": 1700,
         "wires": [
             [
                 "58f86925810cbe59"
@@ -1757,8 +2038,8 @@
                 "module": "moment-timezone"
             }
         ],
-        "x": 250,
-        "y": 1420,
+        "x": 370,
+        "y": 1700,
         "wires": [
             [
                 "8dad9a578763bd4d"
@@ -1773,92 +2054,9 @@
         "name": "link out 2",
         "mode": "return",
         "links": [],
-        "x": 395,
-        "y": 1420,
+        "x": 515,
+        "y": 1700,
         "wires": []
-    },
-    {
-        "id": "c4b7b70f1a77bc4e",
-        "type": "function",
-        "z": "1636b6e86ca6c5aa",
-        "d": true,
-        "g": "e80572384e932621",
-        "name": "Prepare data",
-        "func": "msg.payload = { \n    url: `${env.get(\"STRIPE_WEBHOOK\")}`,\n    \"enabled_events[]\":\"checkout.session.completed\"\n}\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 430,
-        "y": 1780,
-        "wires": [
-            [
-                "06308bdde527f0dd"
-            ]
-        ]
-    },
-    {
-        "id": "af72f685b214411d",
-        "type": "smeSender",
-        "z": "1636b6e86ca6c5aa",
-        "g": "1434cf2e8e9a87e4",
-        "connector": "f9adc5c8242ed986",
-        "async": "0",
-        "name": "",
-        "actionName": "channel_create",
-        "actionText": "Channel - Create",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "messageId": "",
-        "messageIdType": "str",
-        "limit": 0,
-        "limitType": "num",
-        "recipientIds": "",
-        "recipientIdsType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "",
-        "channelIdType": "str",
-        "title": "Bookings",
-        "titleType": "str",
-        "saveLocation": "#:(file)::bookingsChannelId",
-        "saveLocationType": "flow",
-        "saveRequestIdLocation": "savedRequestId",
-        "saveRequestIdLocationType": "flow",
-        "cameraOptions": [],
-        "cameraList": [],
-        "logToConsole": false,
-        "x": 680,
-        "y": 140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0275566ffdfa0730",
-        "type": "switch",
-        "z": "1636b6e86ca6c5aa",
-        "g": "1434cf2e8e9a87e4",
-        "name": "Channel Not Exists?",
-        "property": "#:(file)::bookingsChannelId",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "null"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 420,
-        "y": 140,
-        "wires": [
-            [
-                "af72f685b214411d"
-            ]
-        ]
     },
     {
         "id": "b0bec7a3b4683781",
@@ -1873,8 +2071,8 @@
             "9cd9d171f66cf4ac",
             "6e83c6c7ab618392"
         ],
-        "x": 1065,
-        "y": 860,
+        "x": 1205,
+        "y": 980,
         "wires": []
     },
     {
@@ -1883,8 +2081,8 @@
         "z": "1636b6e86ca6c5aa",
         "g": "3f4d16ccb48282c4",
         "connector": "f9adc5c8242ed986",
-        "x": 910,
-        "y": 860,
+        "x": 1050,
+        "y": 980,
         "wires": [
             [
                 "b0bec7a3b4683781"
@@ -1913,8 +2111,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "str",
-        "x": 200,
-        "y": 280,
+        "x": 320,
+        "y": 400,
         "wires": [
             [
                 "f03835cf42c0279d"
@@ -1927,15 +2125,15 @@
         "z": "1636b6e86ca6c5aa",
         "g": "7a2b8df04c4b03f8",
         "name": "Prepare data",
-        "func": "msg.payload = { \n    url: `${env.get(\"STRIPE_WEBHOOK\")}`,\n    \"enabled_events[]\":\"checkout.session.completed\"\n}\nreturn msg;",
+        "func": "msg.url = `https://${env.get(\"STRIPE_KEY\")}@api.stripe.com/v1/webhook_endpoints`;\n\nmsg.payload = { \n    url: `${env.get(\"STRIPE_WEBHOOK\")}`,\n    \"enabled_events[]\":\"checkout.session.completed\"\n}\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 280,
+        "x": 550,
+        "y": 400,
         "wires": [
             [
                 "b13af975c5bb5d10"
@@ -1951,7 +2149,7 @@
         "method": "POST",
         "ret": "txt",
         "paytoqs": "ignore",
-        "url": "https://api.stripe.com/v1/webhook_endpoints",
+        "url": "",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1966,8 +2164,8 @@
                 "valueValue": "application/x-www-form-urlencoded"
             }
         ],
-        "x": 690,
-        "y": 280,
+        "x": 810,
+        "y": 400,
         "wires": [
             [
                 "4905571c09f0096a"
@@ -1988,8 +2186,908 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 970,
-        "y": 280,
+        "x": 1090,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "36bc77ce3846b77f",
+        "type": "e-mail",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "b9fef686bd4390da",
+        "server": "smtp.mailersend.net",
+        "port": "587",
+        "authtype": "BASIC",
+        "saslformat": true,
+        "token": "oauth2Response.access_token",
+        "secure": false,
+        "tls": false,
+        "name": "",
+        "dname": "Send confirmation Email",
+        "x": 1290,
+        "y": 1380,
+        "wires": []
+    },
+    {
+        "id": "07bbb657d439c243",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "b9fef686bd4390da",
+        "name": "Prepare email",
+        "func": "if (msg.customerDetails?.email === undefined) {\n    return null;\n}\n\nlet startTime = moment(msg.payload.slotStartTimestamp);\nlet endTime = moment(msg.payload.slotEndTimestamp);\nlet to = msg.customerDetails.email;\nlet payload = \"Check out your appointment - TEST\";\nlet topic = \"New Doctor Appointment - TEST\";\n\nconst { ICalCalendarMethod } = ical;\nconst myCal = ical.default({name: \"appointmentCalendar\"});\nmyCal.method(ICalCalendarMethod.REQUEST);\n\nmyCal.createEvent({\n    start: startTime,\n    end: endTime,\n    summary: 'Doctor Appointment',\n    description: '',\n    location: '',\n    url: 'http://www.semilimes.com/'   \n});\n\nlet attachments = [\n    {\n        filename: 'appointment.ics',\n        content: myCal.toString(),\n        contentType: 'text/calendar; charset=utf-8'\n    }\n]\n\nmsg = {\n    to: to,\n    payload: payload,\n    topic: topic,\n    attachments: attachments   \n}\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "ical",
+                "module": "ical-generator"
+            },
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 1040,
+        "y": 1380,
+        "wires": [
+            [
+                "36bc77ce3846b77f"
+            ]
+        ]
+    },
+    {
+        "id": "ecfdaaf63607daaf",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "msg.payload = {\n    active: false,\n    limit: 3\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 2040,
+        "wires": [
+            [
+                "c1df3f923e81ac9a"
+            ]
+        ]
+    },
+    {
+        "id": "0cc5a47bc480f753",
+        "type": "split",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload.data",
+        "x": 350,
+        "y": 2100,
+        "wires": [
+            [
+                "56d9d970e73ca7b0"
+            ]
+        ]
+    },
+    {
+        "id": "d9d48bbf44613c01",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 142",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 2100,
+        "wires": []
+    },
+    {
+        "id": "56d9d970e73ca7b0",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Extract PaymentLinkId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.id",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2100,
+        "wires": [
+            [
+                "d9d48bbf44613c01",
+                "cf3b9ffd3e6fcdb6"
+            ]
+        ]
+    },
+    {
+        "id": "3de14dbddb7f5137",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "POST Update Payment Link (Deactivate)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 600,
+        "y": 2220,
+        "wires": [
+            [
+                "af21e859fb453172"
+            ]
+        ]
+    },
+    {
+        "id": "5aaf99b8f3652217",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "const paymentLinkId = msg.payload;\n\nmsg.url = `https://api.stripe.com/v1/payment_links/${paymentLinkId}`\n\nmsg.payload = {\n    active: false\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 2220,
+        "wires": [
+            [
+                "3de14dbddb7f5137"
+            ]
+        ]
+    },
+    {
+        "id": "af21e859fb453172",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 144",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 2220,
+        "wires": []
+    },
+    {
+        "id": "840122f48c1f8c16",
+        "type": "delay",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 630,
+        "y": 2160,
+        "wires": [
+            [
+                "5aaf99b8f3652217"
+            ]
+        ]
+    },
+    {
+        "id": "cf3b9ffd3e6fcdb6",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Set Msg.rate to 300 ms",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rate",
+                "pt": "msg",
+                "to": "300",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 2160,
+        "wires": [
+            [
+                "840122f48c1f8c16"
+            ]
+        ]
+    },
+    {
+        "id": "c1ebf484e8eb0722",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 145",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1010,
+        "y": 2300,
+        "wires": []
+    },
+    {
+        "id": "e2b2111b02b4b965",
+        "type": "inject",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Get Products",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 2300,
+        "wires": [
+            [
+                "e919a3ea5e2f3056"
+            ]
+        ]
+    },
+    {
+        "id": "2af83eb8369a1eb9",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "GET (Active) Products",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "query",
+        "url": "https://api.stripe.com/v1/products",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 760,
+        "y": 2300,
+        "wires": [
+            [
+                "c1ebf484e8eb0722",
+                "86815fd2bfc62443"
+            ]
+        ]
+    },
+    {
+        "id": "e919a3ea5e2f3056",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "msg.payload = {\n    active: true,\n    limit: 100\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 2300,
+        "wires": [
+            [
+                "2af83eb8369a1eb9"
+            ]
+        ]
+    },
+    {
+        "id": "86815fd2bfc62443",
+        "type": "split",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload.data",
+        "x": 350,
+        "y": 2360,
+        "wires": [
+            [
+                "e97d63043a01d5a8"
+            ]
+        ]
+    },
+    {
+        "id": "44f320d8af80c019",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 146",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 830,
+        "y": 2360,
+        "wires": []
+    },
+    {
+        "id": "e97d63043a01d5a8",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Extract ProductId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.id",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 530,
+        "y": 2360,
+        "wires": [
+            [
+                "44f320d8af80c019",
+                "856c7815e7499a59"
+            ]
+        ]
+    },
+    {
+        "id": "c5a3fc23f7bb3f60",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "POST Update Product (Deactivate)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 580,
+        "y": 2480,
+        "wires": [
+            [
+                "3988d7f936792f31"
+            ]
+        ]
+    },
+    {
+        "id": "4be38d07d7f1e5a3",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "const productId = msg.payload;\n\nmsg.url = `https://api.stripe.com/v1/products/${productId}`\n\nmsg.payload = {\n    active: false\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 2480,
+        "wires": [
+            [
+                "c5a3fc23f7bb3f60"
+            ]
+        ]
+    },
+    {
+        "id": "3988d7f936792f31",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 147",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 870,
+        "y": 2480,
+        "wires": []
+    },
+    {
+        "id": "c507b8c4f0a95c7d",
+        "type": "delay",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 630,
+        "y": 2420,
+        "wires": [
+            [
+                "4be38d07d7f1e5a3"
+            ]
+        ]
+    },
+    {
+        "id": "856c7815e7499a59",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Set Msg.rate to 300 ms",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rate",
+                "pt": "msg",
+                "to": "300",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 2420,
+        "wires": [
+            [
+                "c507b8c4f0a95c7d"
+            ]
+        ]
+    },
+    {
+        "id": "0a911ab46e35005e",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 148",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 2560,
+        "wires": []
+    },
+    {
+        "id": "6a70f5941bea7552",
+        "type": "inject",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Get Prices",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 2560,
+        "wires": [
+            [
+                "c55f23e93f43d42d"
+            ]
+        ]
+    },
+    {
+        "id": "b4df5580cf5f3a58",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "GET (Active) Prices",
+        "method": "GET",
+        "ret": "obj",
+        "paytoqs": "query",
+        "url": "https://api.stripe.com/v1/prices",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 770,
+        "y": 2560,
+        "wires": [
+            [
+                "0a911ab46e35005e",
+                "b6dae55ed2c8a515"
+            ]
+        ]
+    },
+    {
+        "id": "c55f23e93f43d42d",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "msg.payload = {\n    active: true,\n    limit: 100\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 2560,
+        "wires": [
+            [
+                "b4df5580cf5f3a58"
+            ]
+        ]
+    },
+    {
+        "id": "b6dae55ed2c8a515",
+        "type": "split",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "property": "payload.data",
+        "x": 370,
+        "y": 2620,
+        "wires": [
+            [
+                "a8c8d07947283ab1"
+            ]
+        ]
+    },
+    {
+        "id": "13dcd6e941748191",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 149",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 2620,
+        "wires": []
+    },
+    {
+        "id": "a8c8d07947283ab1",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Extract PriceId",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.data.id",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 540,
+        "y": 2620,
+        "wires": [
+            [
+                "13dcd6e941748191",
+                "5d8c85ad0a2a403c"
+            ]
+        ]
+    },
+    {
+        "id": "036a10c08874981f",
+        "type": "http request",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "POST Update Price (Deactivate)",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "basic",
+        "senderr": false,
+        "headers": [
+            {
+                "keyType": "Content-Type",
+                "keyValue": "",
+                "valueType": "other",
+                "valueValue": "application/x-www-form-urlencoded"
+            }
+        ],
+        "x": 590,
+        "y": 2740,
+        "wires": [
+            [
+                "efc6da0a3d82855d"
+            ]
+        ]
+    },
+    {
+        "id": "eea007aad87deb87",
+        "type": "function",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Prepare data",
+        "func": "const priceId = msg.payload;\n\nmsg.url = `https://api.stripe.com/v1/prices/${priceId}`\n\nmsg.payload = {\n    active: false\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 370,
+        "y": 2740,
+        "wires": [
+            [
+                "036a10c08874981f"
+            ]
+        ]
+    },
+    {
+        "id": "efc6da0a3d82855d",
+        "type": "debug",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "debug 150",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 890,
+        "y": 2740,
+        "wires": []
+    },
+    {
+        "id": "b58f7d3b1f0ed03a",
+        "type": "delay",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": true,
+        "outputs": 1,
+        "x": 650,
+        "y": 2680,
+        "wires": [
+            [
+                "eea007aad87deb87"
+            ]
+        ]
+    },
+    {
+        "id": "5d8c85ad0a2a403c",
+        "type": "change",
+        "z": "1636b6e86ca6c5aa",
+        "d": true,
+        "g": "ce953793e2bdced6",
+        "name": "Set Msg.rate to 300 ms",
+        "rules": [
+            {
+                "t": "set",
+                "p": "rate",
+                "pt": "msg",
+                "to": "300",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 410,
+        "y": 2680,
+        "wires": [
+            [
+                "b58f7d3b1f0ed03a"
+            ]
+        ]
+    },
+    {
+        "id": "56163e3ae17b0654",
+        "type": "comment",
+        "z": "1636b6e86ca6c5aa",
+        "name": "Setup your Stripe product price here ▶",
+        "info": "",
+        "x": 190,
+        "y": 760,
         "wires": []
     },
     {

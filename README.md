@@ -33,9 +33,9 @@ You don't need to operate on your payment service. Just connect your Stripe paym
 
 The users who access this system are provided with a `slot booking` form where only activated slots are proposed. The users can then directly reach the Stripe payment service to complete payment.
 
-### Booked appointment reminders
+### In-app and email appointment reminders
 
-Upon payment, automatic reminders are sent to both the administrator and the user, which can be imported to the phones' calendar.
+Upon payment, automatic reminders are sent to both the administrator and the user in their semilimes app. Optionally, you can enable and configure your email service to send automatic email reminders to the user who booked the appointment.
 
 ### Free solution
 
@@ -51,15 +51,21 @@ A new empty file-based calendar will be created under your NodeRED instance, rea
 
 ### Bookings Admin channel creation
 
-The `Bookings Admin` channel is created and populated with a date/slot selection form, meant to be used by the admin to find and activate bookable slots, and to check if slots have been already booked.
+The `Bookings Admin` channel is created and populated with a date selection/population form, meant to be used by the admin to select a general time span, and then use a calendar-like form to activate bookable slots, and/or to check if slots have been already activated or booked.
 
-![Bookings Admin Channel Image](./images/bookingsAdminChannel.jpg)
+![Bookings Admin Channel Image 1](./images/bookingsAdminChannel_1.jpg)
+
+![Bookings Admin Channel Image 2](./images/bookingsAdminChannel_2.jpg)
 
 ### Booking session private chat
 
-In semilimes app, each user accessing this system will be placed in a private chat with this subaccount to privately process the date/slot selection and booking.
+In semilimes app, each user accessing this system will be placed in a private chat with this subaccount to privately process the date/slot selection and booking. Upon confirmation of a slot to book, a payment session will be proposed to the user, so that the payment can be finalized.
 
-![Booking Chat Image](./images/bookingsChat.jpg)
+![Booking Chat Image 1](./images/bookingsChat_1.jpg)
+
+![Booking Chat Image 2](./images/bookingsChat_2.jpg)
+
+![Booking Chat Image 3](./images/bookingsChat_3.jpg)
 
 ### Booking Sessions internal channel creation
 
@@ -85,6 +91,10 @@ Upon payment completion of a slot by a user on Stripe, the latter will send a we
 Upon payment completion of a slot by a user, the booking system will send customized appointment messages to both the admin and the paying user. These appointment messages can be opened in the semilimes app and saved on the personal phone's agenda.
 
 ![Appointment reminder Image](./images/appointment_reminder.jpg)
+
+If the email appointment feature is configured, the paying user gets an email with the same appointment reminder.
+
+![Appointment email Image](./images/appointment_email.jpg)
 
 ## ⚙️ Configuration instructions
 
@@ -169,10 +179,29 @@ You should now have your recipe ready for startup!
 **Step 7: Activate the recipe**
 
 In the `BookingCalendar` flow:
+
+- Open `Set Slot Generation Config` and setup your preferred slot generation rules:
+  - `startTime` is the time of the day to start considering your overall availability
+  - `endTime` is the time of the day to end your overall availability
+  - `slotDuration` is the duration of each bookable slot
+  - `pauseDuration` is the time distance between the end of a slot and the beginning of the next one
+  - `timezone` is the timezone in which the exact times will be generated. Explore all the [timezone identifiers](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)
+
+![Booking Calendar Config Image](./images/bookingCalendarFlowCalendarConfig.jpg)
+
+- Open `Create Product Payload` under the StripeAPI: Create Payment Links group.
+  - change `default_price_data[currency]` to the currency of your choice
+  - change `default_price_data[unit_amount]` to the price of your choice. Make sure you enter the number as cents (so 50.00 EUR is represented with the number 5000)
+
+![Booking Calendar Stripe Price Image](./images/bookingCalendarFlowStripePriceConfig.jpg)
+
 - Trigger `Reset Calendar`: this will create an empty calendar ready to use, and the `Bookings` channel
+
+![BookingCalendar Flow Setup Image](./images/bookingCalendarFlowSetup.jpg)
+
 - Trigger `Create Webhook` (ONCE ONLY!) to call Stripe and create a webhook connection Stripe->semilimes
 
-![BookingCalendar Flow Setup Image](./images/bookingAdminFlowSetup.jpg)
+
 
 In the `Bookings Admin` flow:
 - Trigger `Setup`: this will create the `Bookings Admin` channel and the date selection form message for the administrator
@@ -205,9 +234,29 @@ Each user submitting this form will receive a private message from your subaccou
 
 ## 💡Extension ideas 
 
-TO DO:
-- Extract User email from Stripe and add to booking information
+...
 
 ## 🛠️ Troubleshooting 
 
-...
+In Bookings Admin flow, you can find and enable "service" flows for working with Stripe APIs.
+For example, you can clear your Stripe environment by deleting all payment links, products and prices.
+
+![Test API flows Image](./images/test_api_flows.jpg)
+
+## Changelog
+
+### v1.1.0
+
+1. Updated @semilimes/node-red-semilimes package dependency to version 1.2.1
+2. Replaced the multiple choice form for activating slots and selecting available slots with the new Event Picker for showing events over a fixed timespan in a calendar-shaped form
+3. Added configuration helpers in the calendar flow and documented how to configure slot generation parameters and stripe product prices
+4. Now retrieving the provided name and email from the Stripe session to fill the appointment reminders and emails
+5. Implemented optional email sending feature for booked appointments
+6. Updated Stripe API calls to create one-time-only payment links, so that each specific link will be automatically deactivated after the first completed payment
+7. Updated service Stripe APIs to clear the Stripe environment
+8. Moved the STRIPE_KEY environment variable reading to function nodes prior to the Stripe HTTP call nodes
+9. Added this changelog
+
+### v1.0.0
+
+Initial Release

@@ -19,14 +19,14 @@
             "961f76e44ba0a009",
             "bbf9890dd64abc81",
             "926cfadeb66f7f33",
-            "d4f180f1dc1d3cdb",
             "9ee6ad0389984148",
             "24821ce271c5ab34",
-            "81326539dd149365"
+            "81326539dd149365",
+            "d8f7194d1c3136c2"
         ],
-        "x": 194,
-        "y": 79,
-        "w": 1152,
+        "x": 224,
+        "y": 39,
+        "w": 1112,
         "h": 162
     },
     {
@@ -42,26 +42,31 @@
             "13c1880ac68cc0ea",
             "7d58709315fc281b",
             "8a0239e28892322b",
-            "3eeead223038acca",
-            "becaa70f8c4830e8",
-            "e972e80b47719627",
-            "c860181a71e91a26",
-            "82c271397c7ccc71",
-            "cf646de67571b9ea",
-            "027efa0cb39b52a7",
-            "ba429d4414b8d5cd",
-            "58605633c31b8470",
-            "7e8fabb70c920354",
-            "2a2f88be988812ec",
-            "0cb05d914125f8a3",
-            "2757483e6be1bd42",
-            "4b022fd9833b76e6",
-            "591f39b0b7e50490"
+            "d10f74ca26b40671",
+            "49af6cd7dea7ab46",
+            "8ad23ed01ca8fa1b",
+            "6bc665065695786d",
+            "458795b1f93cb344",
+            "df9883510d703da2",
+            "d00f7ae527a9108b",
+            "54c89da65ccfcfd0",
+            "f046a870709b86f3",
+            "29144b0320392c99",
+            "ae4af68b6127b1f5",
+            "02735ca0e5ca2452",
+            "a397339cf8d7f7b1",
+            "b781d35d352decb0",
+            "27c160f10c073a7a",
+            "3748cd00cd3508fd",
+            "85276083ac7a289b",
+            "fe091290511ddba6",
+            "61121cf0e39e9c50",
+            "ef3f7c79d2099982"
         ],
-        "x": 194,
-        "y": 379,
-        "w": 1432,
-        "h": 302
+        "x": 464,
+        "y": 239,
+        "w": 1482,
+        "h": 482
     },
     {
         "id": "22a8be0a1056b48a",
@@ -73,27 +78,30 @@
         },
         "nodes": [
             "df0a57ba6835c338",
-            "3c1130f29aba3ed8",
-            "b34073113d7ead32",
-            "7612b24b279c7a9e",
             "2cc3773bd3b96cb3",
             "a4ca53a1db45bb29",
             "854bbca4df5e38ad",
             "3e7acb6429615813",
             "7516d2d82da92ed7",
-            "93069f0eae31b8eb",
-            "a2bb6fe7356e0837",
-            "508b0e0c7c0c300e",
-            "3d0419a23ea94149",
-            "4ca3ca98d109a453",
-            "debb7a17f7080f62",
-            "8580efe4bb2abbce",
-            "9ff2373997d32be6"
+            "daadf1e396c5fb61",
+            "1ffc43563128b234",
+            "f9101a9b461b13ac",
+            "f98bb5ba0e912b62",
+            "590954c737f00e27",
+            "5cef292de698b7ea",
+            "0004dafa87abc0c6",
+            "5dc29e09b8fcf911",
+            "bae3c1aeb01a6e8e",
+            "32343510d7720d62",
+            "7a7e797bfbe8444e",
+            "2a4945271125366b",
+            "4141f55dd30b4792",
+            "9d246304e2a9d47b"
         ],
-        "x": 194,
-        "y": 719,
-        "w": 1052,
-        "h": 362
+        "x": 224,
+        "y": 739,
+        "w": 1422,
+        "h": 442
     },
     {
         "id": "fc5c3a27e3769f0f",
@@ -108,247 +116,73 @@
             "d834a0d9e8f16f49",
             "a084aa0c75b1853c",
             "3290f2a11dd54627",
-            "b3092378f7ef4649",
             "8d9b0737ed48871e",
             "cd7e40b58c4755db",
             "eacf5d7107ef6b2f",
-            "78f4ee526a240826"
+            "78f4ee526a240826",
+            "5fe7aa5e14ed8aae",
+            "cb727bc03427a8d3",
+            "f9dc491d16d795fd",
+            "29ba1089da48acb1"
         ],
-        "x": 194,
-        "y": 1139,
-        "w": 712,
-        "h": 242
+        "x": 224,
+        "y": 1279,
+        "w": 1282,
+        "h": 262
     },
     {
-        "id": "961f76e44ba0a009",
-        "type": "inject",
+        "id": "6e83c6c7ab618392",
+        "type": "link in",
         "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "name": "Setup",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
+        "name": "in_fromListener",
+        "links": [
+            "b0bec7a3b4683781"
         ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 290,
-        "y": 120,
+        "x": 125,
+        "y": 840,
         "wires": [
             [
-                "bbf9890dd64abc81",
-                "9ee6ad0389984148",
-                "81326539dd149365"
+                "13c1880ac68cc0ea",
+                "df0a57ba6835c338",
+                "729a3a7eb45f1b2e"
             ]
         ]
     },
     {
-        "id": "bbf9890dd64abc81",
-        "type": "smeFormSetup",
+        "id": "f8a032e8119e4ea6",
+        "type": "link in",
         "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "connector": "f9adc5c8242ed986",
-        "name": "",
-        "saveLocation": "#:(file)::bookingRequest_dateSelectionForm",
-        "saveLocationType": "flow",
-        "submitEnabled": "1",
-        "retainStatus": "1",
-        "submitText": "Confirm",
-        "submitTextType": "str",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "#:(file)::bookingSessionsChannelId",
-        "channelIdType": "flow",
-        "receiverType": "channel",
-        "refName": "bookingRequest_dateSelectionForm",
-        "refNameType": "str",
-        "x": 620,
-        "y": 120,
-        "wires": [
-            [
-                "926cfadeb66f7f33"
-            ]
-        ]
-    },
-    {
-        "id": "926cfadeb66f7f33",
-        "type": "smeFormComponent",
-        "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "name": "",
-        "reference": "startDate",
-        "referenceType": "str",
-        "component": "datepicker",
-        "title": "Choose a Date",
-        "titleType": "str",
-        "required": "true",
-        "requiredType": "bool",
-        "text": "",
-        "textType": "str",
-        "verticalList": "true",
-        "verticalListType": "bool",
-        "buttons": [],
-        "choices": [],
-        "choiceSelectionMode": "list",
-        "switchValue": "false",
-        "switchValueType": "bool",
-        "sliderMin": 0,
-        "sliderMinType": "num",
-        "sliderMax": 10,
-        "sliderMaxType": "num",
-        "sliderStep": 0,
-        "sliderStepType": "num",
-        "sliderValue": 0,
-        "sliderValueType": "num",
-        "actionButtonTitle": "Select",
-        "actionButtonTitleType": "str",
-        "multiSelection": "false",
-        "multiSelectionType": "bool",
-        "bucketFilter": "all",
-        "x": 940,
-        "y": 120,
-        "wires": [
-            [
-                "d4f180f1dc1d3cdb"
-            ]
-        ]
-    },
-    {
-        "id": "d4f180f1dc1d3cdb",
-        "type": "smeFormComponent",
-        "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "name": "",
-        "reference": "spanSelection",
-        "referenceType": "str",
-        "component": "singlechoice",
-        "title": "Show slots for",
-        "titleType": "str",
-        "required": "true",
-        "requiredType": "bool",
-        "text": "",
-        "textType": "str",
-        "verticalList": "true",
-        "verticalListType": "bool",
-        "buttons": [],
-        "choices": [
-            {
-                "name": "Selected Day",
-                "value": "selectedDay"
-            },
-            {
-                "name": "Next 7 days",
-                "value": "nextWeek"
-            }
+        "name": "in_resetUserSession",
+        "links": [
+            "73c72fe7ade25524"
         ],
-        "choiceSelectionMode": "dropdown",
-        "switchValue": "false",
-        "switchValueType": "bool",
-        "sliderMin": 0,
-        "sliderMinType": "num",
-        "sliderMax": 10,
-        "sliderMaxType": "num",
-        "sliderStep": 0,
-        "sliderStepType": "num",
-        "sliderValue": 0,
-        "sliderValueType": "num",
-        "actionButtonTitle": "Select",
-        "actionButtonTitleType": "str",
-        "multiSelection": "false",
-        "multiSelectionType": "bool",
-        "bucketFilter": "all",
-        "x": 1200,
-        "y": 120,
+        "x": 125,
+        "y": 380,
         "wires": [
-            []
-        ]
-    },
-    {
-        "id": "423168a686040bc3",
-        "type": "switch",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "Get valid submitter",
-        "property": "submitterId",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "null"
-            },
-            {
-                "t": "neq",
-                "v": "SME_ACCOUNT_ID",
-                "vt": "env"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 2,
-        "x": 510,
-        "y": 460,
-        "wires": [
-            [],
             [
-                "8a0239e28892322b"
+                "7bc84279caeb96c5"
             ]
         ]
     },
     {
-        "id": "13c1880ac68cc0ea",
-        "type": "smeFilter",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "connector": "f9adc5c8242ed986",
-        "name": "",
-        "filter": "submission",
-        "reference": "startBookingSessionForm",
-        "referenceType": "str",
-        "messageId": "",
-        "messageIdType": "str",
-        "extractValues": true,
-        "chat": "p2p",
-        "senderId": "",
-        "senderIdType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "",
-        "channelIdType": "str",
-        "requestId": "savedRequestId",
-        "requestIdType": "flow",
-        "saveLocation": "filteredEvent",
-        "saveLocationType": "msg",
-        "x": 400,
-        "y": 420,
-        "wires": [
-            [
-                "7d58709315fc281b"
-            ]
-        ]
-    },
-    {
-        "id": "7d58709315fc281b",
+        "id": "7bc84279caeb96c5",
         "type": "change",
         "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "",
+        "name": "Set User end session params",
         "rules": [
             {
                 "t": "set",
                 "p": "submitterId",
                 "pt": "msg",
-                "to": "_sme.receivedMsg.eventBody.dataComponent.submitterId",
+                "to": "payload.accountId",
                 "tot": "msg"
+            },
+            {
+                "t": "set",
+                "p": "endSession",
+                "pt": "msg",
+                "to": "true",
+                "tot": "bool"
             }
         ],
         "action": "",
@@ -356,57 +190,46 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 310,
-        "y": 460,
+        "x": 300,
+        "y": 380,
         "wires": [
             [
-                "423168a686040bc3"
+                "8a0239e28892322b"
             ]
         ]
     },
     {
-        "id": "8a0239e28892322b",
-        "type": "function",
+        "id": "d10f74ca26b40671",
+        "type": "switch",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
-        "name": "Identify User session",
-        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 320,
-        "y": 520,
+        "name": "New User?",
+        "property": "newUser",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "true"
+            },
+            {
+                "t": "false"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 830,
+        "y": 380,
         "wires": [
             [
-                "027efa0cb39b52a7",
-                "e972e80b47719627"
+                "49af6cd7dea7ab46"
+            ],
+            [
+                "a397339cf8d7f7b1"
             ]
         ]
     },
     {
-        "id": "9ee6ad0389984148",
-        "type": "function",
-        "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "name": "Prepare sessions",
-        "func": "flow.set(\"userSessions\",[],\"file\");\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 510,
-        "y": 160,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "3eeead223038acca",
+        "id": "49af6cd7dea7ab46",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
@@ -446,16 +269,16 @@
         "tunnelIdType": "str",
         "formLocation": "#:(file)::bookingRequest_dateSelectionForm",
         "formLocationType": "flow",
-        "x": 910,
-        "y": 440,
+        "x": 1210,
+        "y": 360,
         "wires": [
             [
-                "becaa70f8c4830e8"
+                "8ad23ed01ca8fa1b"
             ]
         ]
     },
     {
-        "id": "becaa70f8c4830e8",
+        "id": "8ad23ed01ca8fa1b",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
@@ -485,85 +308,16 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1200,
-        "y": 440,
+        "x": 1480,
+        "y": 360,
         "wires": [
             [
-                "82c271397c7ccc71"
+                "6bc665065695786d"
             ]
         ]
     },
     {
-        "id": "e972e80b47719627",
-        "type": "switch",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "New User?",
-        "property": "newUser",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 550,
-        "y": 520,
-        "wires": [
-            [
-                "3eeead223038acca"
-            ],
-            [
-                "0cb05d914125f8a3"
-            ]
-        ]
-    },
-    {
-        "id": "c860181a71e91a26",
-        "type": "smeSender",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "connector": "f9adc5c8242ed986",
-        "async": "0",
-        "name": "",
-        "actionName": "p2p_message_update",
-        "actionText": "P2P - Update Message",
-        "recipientId": "accountId",
-        "recipientIdType": "msg",
-        "messageId": "searchMsgId",
-        "messageIdType": "msg",
-        "limit": 0,
-        "limitType": "num",
-        "recipientIds": "",
-        "recipientIdsType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "#:(file)::bookingsAdminChannelId",
-        "channelIdType": "flow",
-        "title": "",
-        "titleType": "str",
-        "saveLocation": "searchMsgId",
-        "saveLocationType": "msg",
-        "saveRequestIdLocation": "savedRequestId",
-        "saveRequestIdLocationType": "flow",
-        "cameraOptions": [],
-        "cameraList": [],
-        "logToConsole": false,
-        "x": 1130,
-        "y": 520,
-        "wires": [
-            [
-                "2757483e6be1bd42"
-            ]
-        ]
-    },
-    {
-        "id": "82c271397c7ccc71",
+        "id": "6bc665065695786d",
         "type": "function",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
@@ -575,14 +329,42 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1470,
-        "y": 440,
+        "x": 1730,
+        "y": 360,
         "wires": [
-            []
+            [
+                "458795b1f93cb344"
+            ]
         ]
     },
     {
-        "id": "cf646de67571b9ea",
+        "id": "458795b1f93cb344",
+        "type": "delay",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1120,
+        "y": 420,
+        "wires": [
+            [
+                "df9883510d703da2"
+            ]
+        ]
+    },
+    {
+        "id": "df9883510d703da2",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
@@ -622,72 +404,16 @@
         "tunnelIdType": "str",
         "formLocation": "#:(file)::bookingRequest_dateSelectionForm",
         "formLocationType": "flow",
-        "x": 920,
-        "y": 580,
+        "x": 1300,
+        "y": 420,
         "wires": [
             [
-                "58605633c31b8470"
+                "d00f7ae527a9108b"
             ]
         ]
     },
     {
-        "id": "027efa0cb39b52a7",
-        "type": "delay",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "4",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 520,
-        "y": 580,
-        "wires": [
-            [
-                "ba429d4414b8d5cd"
-            ]
-        ]
-    },
-    {
-        "id": "ba429d4414b8d5cd",
-        "type": "switch",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "New User?",
-        "property": "newUser",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "true"
-            },
-            {
-                "t": "false"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 690,
-        "y": 580,
-        "wires": [
-            [
-                "cf646de67571b9ea"
-            ],
-            [
-                "4b022fd9833b76e6"
-            ]
-        ]
-    },
-    {
-        "id": "58605633c31b8470",
+        "id": "d00f7ae527a9108b",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
@@ -708,6 +434,7 @@
         "groupChatIdType": "str",
         "channelId": "#:(file)::bookingRequestChannelId",
         "channelIdType": "flow",
+        "silent": "true",
         "title": "",
         "titleType": "str",
         "saveLocation": "savedSlotsMsgId",
@@ -717,22 +444,352 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1120,
-        "y": 580,
+        "x": 1500,
+        "y": 420,
         "wires": [
             [
-                "2a2f88be988812ec"
+                "54c89da65ccfcfd0"
             ]
         ]
     },
     {
-        "id": "7e8fabb70c920354",
+        "id": "54c89da65ccfcfd0",
+        "type": "function",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Save Slots MsgId in session",
+        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.slotsMsgId = msg.savedSlotsMsgId;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1760,
+        "y": 420,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f046a870709b86f3",
+        "type": "delay",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 560,
+        "y": 680,
+        "wires": [
+            [
+                "29144b0320392c99"
+            ]
+        ]
+    },
+    {
+        "id": "29144b0320392c99",
+        "type": "switch",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "PaymentMsgId Exists?",
+        "property": "paymentMsgId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "istype",
+                "v": "string",
+                "vt": "string"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 760,
+        "y": 680,
+        "wires": [
+            [
+                "02735ca0e5ca2452"
+            ],
+            [
+                "fe091290511ddba6"
+            ]
+        ]
+    },
+    {
+        "id": "ae4af68b6127b1f5",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
         "connector": "f9adc5c8242ed986",
         "async": "0",
+        "name": "P2P - Update PaymentMsgId",
+        "actionName": "p2p_message_update",
+        "actionText": "P2P - Update Message",
+        "recipientId": "accountId",
+        "recipientIdType": "msg",
+        "messageId": "paymentMsgId",
+        "messageIdType": "msg",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "silent": "true",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "searchMsgId",
+        "saveLocationType": "msg",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 1280,
+        "y": 660,
+        "wires": [
+            [
+                "ef3f7c79d2099982"
+            ]
+        ]
+    },
+    {
+        "id": "02735ca0e5ca2452",
+        "type": "smeMessage",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Payment message expired",
+        "message": "html",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<i>Payment message expired</i>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "savedForm",
+        "formLocationType": "flow",
+        "x": 1020,
+        "y": 660,
+        "wires": [
+            [
+                "ae4af68b6127b1f5"
+            ]
+        ]
+    },
+    {
+        "id": "a397339cf8d7f7b1",
+        "type": "smeMessage",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Search message expired",
+        "message": "html",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<i>Search message expired</i>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "savedForm",
+        "formLocationType": "flow",
+        "x": 750,
+        "y": 540,
+        "wires": [
+            [
+                "b781d35d352decb0"
+            ]
+        ]
+    },
+    {
+        "id": "b781d35d352decb0",
+        "type": "smeSender",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "P2P - Update SearchMsgId",
+        "actionName": "p2p_message_update",
+        "actionText": "P2P - Update Message",
+        "recipientId": "accountId",
+        "recipientIdType": "msg",
+        "messageId": "searchMsgId",
+        "messageIdType": "msg",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingsAdminChannelId",
+        "channelIdType": "flow",
+        "silent": "true",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "searchMsgId",
+        "saveLocationType": "msg",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 1000,
+        "y": 540,
+        "wires": [
+            [
+                "27c160f10c073a7a"
+            ]
+        ]
+    },
+    {
+        "id": "27c160f10c073a7a",
+        "type": "delay",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
         "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 580,
+        "y": 600,
+        "wires": [
+            [
+                "3748cd00cd3508fd"
+            ]
+        ]
+    },
+    {
+        "id": "3748cd00cd3508fd",
+        "type": "smeMessage",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Search message expired",
+        "message": "html",
+        "text": "This is a text message.",
+        "textType": "str",
+        "html": "<i>Search message expired</i>",
+        "htmlType": "str",
+        "fileIds": "",
+        "fileIdsType": "str",
+        "contactIds": "",
+        "contactIdsType": "str",
+        "title": "MyTitle",
+        "titleType": "str",
+        "description": "",
+        "descriptionType": "str",
+        "start": 0,
+        "startType": "num",
+        "end": 0,
+        "endType": "num",
+        "allDay": "false",
+        "allDayType": "bool",
+        "locationName": "myLocation",
+        "locationNameType": "str",
+        "latitude": "",
+        "latitudeType": "str",
+        "longitude": "",
+        "longitudeType": "str",
+        "url": "",
+        "urlType": "str",
+        "enableFullScreenView": "1",
+        "viewSize": "1:2",
+        "channelId": "",
+        "channelIdType": "str",
+        "tunnelId": "",
+        "tunnelIdType": "str",
+        "formLocation": "savedForm",
+        "formLocationType": "flow",
+        "x": 770,
+        "y": 600,
+        "wires": [
+            [
+                "85276083ac7a289b"
+            ]
+        ]
+    },
+    {
+        "id": "85276083ac7a289b",
+        "type": "smeSender",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "P2P - Update SlotsMsgId",
         "actionName": "p2p_message_update",
         "actionText": "P2P - Update Message",
         "recipientId": "accountId",
@@ -747,6 +804,7 @@
         "groupChatIdType": "str",
         "channelId": "#:(file)::bookingsAdminChannelId",
         "channelIdType": "flow",
+        "silent": "true",
         "title": "",
         "titleType": "str",
         "saveLocation": "searchMsgId",
@@ -756,31 +814,406 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 1150,
-        "y": 640,
+        "x": 1010,
+        "y": 600,
         "wires": [
             [
-                "591f39b0b7e50490"
+                "f046a870709b86f3"
             ]
         ]
     },
     {
-        "id": "2a2f88be988812ec",
-        "type": "function",
+        "id": "fe091290511ddba6",
+        "type": "switch",
         "z": "b924b14dcda20cbb",
         "g": "597f5f964bf25ad5",
-        "name": "Save Slots MsgId in session",
-        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.slotsMsgId = msg.savedSlotsMsgId;\n}\nreturn msg;",
+        "name": "New session?",
+        "property": "endSession",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 1,
+        "x": 1840,
+        "y": 680,
+        "wires": [
+            [
+                "61121cf0e39e9c50"
+            ]
+        ]
+    },
+    {
+        "id": "61121cf0e39e9c50",
+        "type": "delay",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1840,
+        "y": 640,
+        "wires": [
+            [
+                "49af6cd7dea7ab46"
+            ]
+        ]
+    },
+    {
+        "id": "961f76e44ba0a009",
+        "type": "inject",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "name": "Setup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "bbf9890dd64abc81",
+                "9ee6ad0389984148",
+                "81326539dd149365"
+            ]
+        ]
+    },
+    {
+        "id": "bbf9890dd64abc81",
+        "type": "smeFormSetup",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "#:(file)::bookingRequest_dateSelectionForm",
+        "saveLocationType": "flow",
+        "submitEnabled": "1",
+        "retainStatus": "1",
+        "submitText": "Search",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingSessionsChannelId",
+        "channelIdType": "flow",
+        "receiverType": "channel",
+        "refName": "bookingRequest_dateSelectionForm",
+        "refNameType": "str",
+        "x": 650,
+        "y": 80,
+        "wires": [
+            [
+                "d8f7194d1c3136c2"
+            ]
+        ]
+    },
+    {
+        "id": "926cfadeb66f7f33",
+        "type": "smeFormComponent",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "name": "",
+        "reference": "startDate",
+        "referenceType": "str",
+        "component": "datepicker",
+        "title": "",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Pick a date",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "eventsDisplayMode": "list",
+        "events": "[]",
+        "eventsType": "json",
+        "x": 1210,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ee6ad0389984148",
+        "type": "function",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "name": "Reset user sessions",
+        "func": "flow.set(\"userSessions\",[],\"file\");\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1400,
-        "y": 580,
+        "x": 550,
+        "y": 120,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "24821ce271c5ab34",
+        "type": "smeSender",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "channel_create",
+        "actionText": "Channel - Create",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "silent": "true",
+        "title": "Booking Sessions",
+        "titleType": "str",
+        "saveLocation": "#:(file)::bookingSessionsChannelId",
+        "saveLocationType": "flow",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 820,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "81326539dd149365",
+        "type": "switch",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "name": "New Channel?",
+        "property": "#:(file)::bookingSessionsChannelId",
+        "propertyType": "flow",
+        "rules": [
+            {
+                "t": "null"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 530,
+        "y": 160,
+        "wires": [
+            [
+                "24821ce271c5ab34"
+            ]
+        ]
+    },
+    {
+        "id": "d8f7194d1c3136c2",
+        "type": "smeFormComponent",
+        "z": "b924b14dcda20cbb",
+        "g": "6901d4fcacc93bbf",
+        "name": "",
+        "reference": "labelSearch",
+        "referenceType": "str",
+        "component": "label",
+        "title": "Hit Search to check the upcoming slots for the next 10 days or select a specific date",
+        "titleType": "str",
+        "required": "false",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "eventsDisplayMode": "list",
+        "events": "[]",
+        "eventsType": "json",
+        "x": 980,
+        "y": 80,
+        "wires": [
+            [
+                "926cfadeb66f7f33"
+            ]
+        ]
+    },
+    {
+        "id": "423168a686040bc3",
+        "type": "switch",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Get valid submitter",
+        "property": "submitterId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "neq",
+                "v": "SME_ACCOUNT_ID",
+                "vt": "env"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 780,
+        "y": 320,
+        "wires": [
+            [],
+            [
+                "8a0239e28892322b"
+            ]
+        ]
+    },
+    {
+        "id": "13c1880ac68cc0ea",
+        "type": "smeFilter",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "filter": "submission",
+        "reference": "startBookingSessionForm",
+        "referenceType": "str",
+        "messageId": "",
+        "messageIdType": "str",
+        "extractValues": true,
+        "chat": "p2p",
+        "senderId": "",
+        "senderIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "requestId": "savedRequestId",
+        "requestIdType": "flow",
+        "saveLocation": "filteredEvent",
+        "saveLocationType": "msg",
+        "x": 670,
+        "y": 280,
+        "wires": [
+            [
+                "7d58709315fc281b"
+            ]
+        ]
+    },
+    {
+        "id": "7d58709315fc281b",
+        "type": "change",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "submitterId",
+                "pt": "msg",
+                "to": "_sme.receivedMsg.eventBody.dataComponent.submitterId",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 580,
+        "y": 320,
+        "wires": [
+            [
+                "423168a686040bc3"
+            ]
+        ]
+    },
+    {
+        "id": "8a0239e28892322b",
+        "type": "function",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Identify User session",
+        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n    msg.paymentMsgId = currentUser.paymentMsgId;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 380,
+        "wires": [
+            [
+                "d10f74ca26b40671"
+            ]
         ]
     },
     {
@@ -807,101 +1240,11 @@
         "requestIdType": "flow",
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
-        "x": 430,
-        "y": 760,
+        "x": 460,
+        "y": 780,
         "wires": [
             [
                 "2cc3773bd3b96cb3"
-            ]
-        ]
-    },
-    {
-        "id": "3c1130f29aba3ed8",
-        "type": "switch",
-        "z": "b924b14dcda20cbb",
-        "g": "22a8be0a1056b48a",
-        "name": "Span selection",
-        "property": "spanSelection",
-        "propertyType": "msg",
-        "rules": [
-            {
-                "t": "eq",
-                "v": "selectedDay",
-                "vt": "str"
-            },
-            {
-                "t": "eq",
-                "v": "nextWeek",
-                "vt": "str"
-            }
-        ],
-        "checkall": "false",
-        "repair": false,
-        "outputs": 2,
-        "x": 560,
-        "y": 840,
-        "wires": [
-            [
-                "b34073113d7ead32"
-            ],
-            [
-                "7612b24b279c7a9e"
-            ]
-        ]
-    },
-    {
-        "id": "b34073113d7ead32",
-        "type": "change",
-        "z": "b924b14dcda20cbb",
-        "g": "22a8be0a1056b48a",
-        "name": "Set 1 day",
-        "rules": [
-            {
-                "t": "set",
-                "p": "daysToReturn",
-                "pt": "msg",
-                "to": "1",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 780,
-        "y": 820,
-        "wires": [
-            [
-                "3e7acb6429615813"
-            ]
-        ]
-    },
-    {
-        "id": "7612b24b279c7a9e",
-        "type": "change",
-        "z": "b924b14dcda20cbb",
-        "g": "22a8be0a1056b48a",
-        "name": "Set 7 days",
-        "rules": [
-            {
-                "t": "set",
-                "p": "daysToReturn",
-                "pt": "msg",
-                "to": "7",
-                "tot": "num"
-            }
-        ],
-        "action": "",
-        "property": "",
-        "from": "",
-        "to": "",
-        "reg": false,
-        "x": 770,
-        "y": 860,
-        "wires": [
-            [
-                "3e7acb6429615813"
             ]
         ]
     },
@@ -925,8 +1268,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 800,
+        "x": 360,
+        "y": 820,
         "wires": [
             [
                 "a4ca53a1db45bb29"
@@ -954,8 +1297,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 800,
+        "x": 560,
+        "y": 820,
         "wires": [
             [],
             [
@@ -976,11 +1319,11 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 840,
+        "x": 370,
+        "y": 860,
         "wires": [
             [
-                "3c1130f29aba3ed8"
+                "2a4945271125366b"
             ]
         ]
     },
@@ -995,72 +1338,11 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 990,
-        "y": 840,
+        "x": 1470,
+        "y": 880,
         "wires": [
             [
                 "7516d2d82da92ed7"
-            ]
-        ]
-    },
-    {
-        "id": "24821ce271c5ab34",
-        "type": "smeSender",
-        "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "connector": "f9adc5c8242ed986",
-        "async": "0",
-        "name": "",
-        "actionName": "channel_create",
-        "actionText": "Channel - Create",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "messageId": "",
-        "messageIdType": "str",
-        "limit": 0,
-        "limitType": "num",
-        "recipientIds": "",
-        "recipientIdsType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "",
-        "channelIdType": "str",
-        "title": "Booking Sessions",
-        "titleType": "str",
-        "saveLocation": "#:(file)::bookingSessionsChannelId",
-        "saveLocationType": "flow",
-        "saveRequestIdLocation": "savedRequestId",
-        "saveRequestIdLocationType": "flow",
-        "cameraOptions": [],
-        "cameraList": [],
-        "logToConsole": false,
-        "x": 790,
-        "y": 200,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "81326539dd149365",
-        "type": "switch",
-        "z": "b924b14dcda20cbb",
-        "g": "6901d4fcacc93bbf",
-        "name": "New Channel?",
-        "property": "#:(file)::bookingSessionsChannelId",
-        "propertyType": "flow",
-        "rules": [
-            {
-                "t": "null"
-            }
-        ],
-        "checkall": "true",
-        "repair": false,
-        "outputs": 1,
-        "x": 500,
-        "y": 200,
-        "wires": [
-            [
-                "24821ce271c5ab34"
             ]
         ]
     },
@@ -1070,53 +1352,49 @@
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
         "name": "Filter only free-enabled slots",
-        "func": "let validSlots = [];\nmsg.foundSlots.forEach(function(slotDay) {\n    let slotsToAdd = [];\n    slotDay.slots.forEach(function(slot) {\n        if (slot.enabled && slot.status === \"free\") {\n            slotsToAdd.push(slot);\n        }\n    });\n    if (slotsToAdd.length > 0) {\n        validSlots.push({\n            day: slotDay.day,\n            slots: slotsToAdd\n        });\n    }\n});\n\nmsg.validSlots = validSlots;\nreturn msg;",
+        "func": "let validSlots = [];\nmsg.foundSlots.forEach(function(slotDay) {\n    let slotsToAdd = [];\n    slotDay.slots.forEach(function(slot) {\n        if (slot.enabled === true && slot.status === \"free\") {\n            slotsToAdd.push(slot);\n        }\n    });\n    if (slotsToAdd.length > 0) {\n        validSlots.push({\n            day: slotDay.day,\n            slots: slotsToAdd\n        });\n    }\n});\n\nmsg.validSlots = validSlots;\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1020,
-        "y": 880,
+        "x": 1500,
+        "y": 920,
         "wires": [
             [
-                "93069f0eae31b8eb"
+                "5dc29e09b8fcf911"
             ]
         ]
     },
     {
-        "id": "93069f0eae31b8eb",
-        "type": "smeFormSetup",
+        "id": "daadf1e396c5fb61",
+        "type": "function",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
-        "connector": "f9adc5c8242ed986",
-        "name": "",
-        "saveLocation": "slotSelectionForm",
-        "saveLocationType": "msg",
-        "submitEnabled": "1",
-        "retainStatus": "0",
-        "submitText": "Book",
-        "submitTextType": "str",
-        "recipientId": "",
-        "recipientIdType": "str",
-        "groupChatId": "",
-        "groupChatIdType": "str",
-        "channelId": "bookingSessionsChannelId",
-        "channelIdType": "flow",
-        "receiverType": "channel",
-        "refName": "bookingRequest_slotSelectionForm",
-        "refNameType": "str",
-        "x": 460,
-        "y": 940,
+        "name": "Generate Events for picker",
+        "func": "let validSlots = msg.validSlots;\nlet config = msg.config;\n\nlet events = [];\n\nvalidSlots.forEach(function(slotDay) {\n    slotDay.slots.forEach(function(slot) {\n        let status = \"FREE\";\n        events.push({\n            id: slot.id,\n            start: slot.start,\n            title: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')}`,\n            description: `${status}`,\n            additionalInfo: {\n                day: slotDay.day,\n                slotId: slot.id\n            }\n        });         \n    });\n});\n\nmsg.calendarEvents = events;\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
+        ],
+        "x": 1050,
+        "y": 1000,
         "wires": [
             [
-                "a2bb6fe7356e0837"
+                "bae3c1aeb01a6e8e"
             ]
         ]
     },
     {
-        "id": "a2bb6fe7356e0837",
+        "id": "1ffc43563128b234",
         "type": "smeFormComponent",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1150,42 +1428,19 @@
         "multiSelection": "false",
         "multiSelectionType": "bool",
         "bucketFilter": "all",
-        "x": 800,
-        "y": 940,
+        "eventsDisplayMode": "list",
+        "events": "[]",
+        "eventsType": "json",
+        "x": 810,
+        "y": 1000,
         "wires": [
             [
-                "508b0e0c7c0c300e"
+                "daadf1e396c5fb61"
             ]
         ]
     },
     {
-        "id": "508b0e0c7c0c300e",
-        "type": "function",
-        "z": "b924b14dcda20cbb",
-        "g": "22a8be0a1056b48a",
-        "name": "Modify Slot Selection Form Options",
-        "func": "let formComponents = msg.slotSelectionForm.formComponents;\nlet validSlots = msg.validSlots;\nlet config = msg.config;\n\nif (formComponents !== undefined) {\n    validSlots.forEach(function(slotDay) {\n        let currentDay = slotDay.day;\n        let currentFormComponent = {\n            refName: `slotsToBook_${currentDay}`,\n            formComponentType: 'singlechoice',\n            title: `${currentDay}`,\n            requiredSelection: true,\n            options: []\n        };\n        slotDay.slots.forEach(function(slot) {\n            let status = \"\";           \n            currentFormComponent.options.push({\n                name: `${moment.tz(slot.start, config.timezone).format('HH:mm')} - ${moment.tz(slot.end, config.timezone).format('HH:mm')}`,\n                value: slot.id\n            });           \n        });\n        formComponents.push(currentFormComponent);\n    });\n}\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "moment",
-                "module": "moment-timezone"
-            }
-        ],
-        "x": 1080,
-        "y": 940,
-        "wires": [
-            [
-                "3d0419a23ea94149"
-            ]
-        ]
-    },
-    {
-        "id": "3d0419a23ea94149",
+        "id": "f9101a9b461b13ac",
         "type": "smeMessage",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1225,16 +1480,16 @@
         "tunnelIdType": "str",
         "formLocation": "slotSelectionForm",
         "formLocationType": "msg",
-        "x": 340,
-        "y": 1000,
+        "x": 350,
+        "y": 1100,
         "wires": [
             [
-                "4ca3ca98d109a453"
+                "f98bb5ba0e912b62"
             ]
         ]
     },
     {
-        "id": "4ca3ca98d109a453",
+        "id": "f98bb5ba0e912b62",
         "type": "switch",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1252,19 +1507,19 @@
         "checkall": "false",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 1000,
+        "x": 560,
+        "y": 1100,
         "wires": [
             [
-                "debb7a17f7080f62"
+                "590954c737f00e27"
             ],
             [
-                "9ff2373997d32be6"
+                "0004dafa87abc0c6"
             ]
         ]
     },
     {
-        "id": "debb7a17f7080f62",
+        "id": "590954c737f00e27",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1294,16 +1549,16 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 760,
-        "y": 1000,
+        "x": 810,
+        "y": 1100,
         "wires": [
             [
-                "8580efe4bb2abbce"
+                "5cef292de698b7ea"
             ]
         ]
     },
     {
-        "id": "8580efe4bb2abbce",
+        "id": "5cef292de698b7ea",
         "type": "function",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1315,14 +1570,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 1000,
+        "x": 1090,
+        "y": 1120,
         "wires": [
             []
         ]
     },
     {
-        "id": "9ff2373997d32be6",
+        "id": "0004dafa87abc0c6",
         "type": "smeSender",
         "z": "b924b14dcda20cbb",
         "g": "22a8be0a1056b48a",
@@ -1352,10 +1607,200 @@
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 770,
-        "y": 1040,
+        "x": 820,
+        "y": 1140,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "5dc29e09b8fcf911",
+        "type": "smeFormSetup",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "connector": "f9adc5c8242ed986",
+        "name": "",
+        "saveLocation": "slotSelectionForm",
+        "saveLocationType": "msg",
+        "submitEnabled": "1",
+        "retainStatus": "0",
+        "submitText": "Book",
+        "submitTextType": "str",
+        "recipientId": "",
+        "recipientIdType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "#:(file)::bookingSessionsChannelId",
+        "channelIdType": "flow",
+        "receiverType": "channel",
+        "refName": "bookingRequest_slotSelectionForm",
+        "refNameType": "str",
+        "x": 490,
+        "y": 1000,
+        "wires": [
+            [
+                "1ffc43563128b234"
+            ]
+        ]
+    },
+    {
+        "id": "bae3c1aeb01a6e8e",
+        "type": "smeFormComponent",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "name": "",
+        "reference": "slotsCalendar",
+        "referenceType": "str",
+        "component": "eventpicker",
+        "title": "Choose Slot to book",
+        "titleType": "str",
+        "required": "true",
+        "requiredType": "bool",
+        "text": "",
+        "textType": "str",
+        "verticalList": "true",
+        "verticalListType": "bool",
+        "buttons": [],
+        "choices": [],
+        "choiceSelectionMode": "list",
+        "switchValue": "false",
+        "switchValueType": "bool",
+        "sliderMin": 0,
+        "sliderMinType": "num",
+        "sliderMax": 10,
+        "sliderMaxType": "num",
+        "sliderStep": 0,
+        "sliderStepType": "num",
+        "sliderValue": 0,
+        "sliderValueType": "num",
+        "actionButtonTitle": "Select",
+        "actionButtonTitleType": "str",
+        "multiSelection": "false",
+        "multiSelectionType": "bool",
+        "bucketFilter": "all",
+        "eventsDisplayMode": "buttons",
+        "events": "calendarEvents",
+        "eventsType": "msg",
+        "x": 1050,
+        "y": 1040,
+        "wires": [
+            [
+                "f9101a9b461b13ac"
+            ]
+        ]
+    },
+    {
+        "id": "32343510d7720d62",
+        "type": "change",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "name": "Add 3 days to date",
+        "rules": [
+            {
+                "t": "set",
+                "p": "skipDays",
+                "pt": "msg",
+                "to": "3",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 820,
+        "y": 920,
+        "wires": [
+            [
+                "7a7e797bfbe8444e"
+            ]
+        ]
+    },
+    {
+        "id": "7a7e797bfbe8444e",
+        "type": "change",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "name": "Set days to return to 15",
+        "rules": [
+            {
+                "t": "set",
+                "p": "daysToReturn",
+                "pt": "msg",
+                "to": "15",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1040,
+        "y": 920,
+        "wires": [
+            [
+                "3e7acb6429615813"
+            ]
+        ]
+    },
+    {
+        "id": "2a4945271125366b",
+        "type": "switch",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "name": "StartDate defined?",
+        "property": "startDate",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "nnull"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 620,
+        "y": 880,
+        "wires": [
+            [
+                "9d246304e2a9d47b"
+            ],
+            [
+                "32343510d7720d62"
+            ]
+        ]
+    },
+    {
+        "id": "4141f55dd30b4792",
+        "type": "change",
+        "z": "b924b14dcda20cbb",
+        "g": "22a8be0a1056b48a",
+        "name": "Set days to return to 1",
+        "rules": [
+            {
+                "t": "set",
+                "p": "daysToReturn",
+                "pt": "msg",
+                "to": "1",
+                "tot": "num"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1180,
+        "y": 860,
+        "wires": [
+            [
+                "3e7acb6429615813"
+            ]
         ]
     },
     {
@@ -1382,8 +1827,8 @@
         "requestIdType": "flow",
         "saveLocation": "filteredEvent",
         "saveLocationType": "msg",
-        "x": 430,
-        "y": 1180,
+        "x": 460,
+        "y": 1320,
         "wires": [
             [
                 "d834a0d9e8f16f49"
@@ -1410,8 +1855,8 @@
         "from": "",
         "to": "",
         "reg": false,
-        "x": 330,
-        "y": 1220,
+        "x": 360,
+        "y": 1360,
         "wires": [
             [
                 "a084aa0c75b1853c"
@@ -1439,8 +1884,8 @@
         "checkall": "true",
         "repair": false,
         "outputs": 2,
-        "x": 530,
-        "y": 1220,
+        "x": 560,
+        "y": 1360,
         "wires": [
             [],
             [
@@ -1454,39 +1899,18 @@
         "z": "b924b14dcda20cbb",
         "g": "fc5c3a27e3769f0f",
         "name": "Identify User session",
-        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n}\n\nreturn msg;",
+        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    sessions.push({\n        accountId: msg.submitterId\n    });\n    msg.newUser = true;\n    msg.accountId = msg.submitterId\n} else {\n    msg.newUser = false;\n    msg.accountId = currentUser.accountId;\n    msg.searchMsgId = currentUser.searchMsgId;\n    msg.slotsMsgId = currentUser.slotsMsgId;\n    msg.paymentMsgId = currentUser.paymentMsgId;\n}\n\nreturn msg;",
         "outputs": 1,
         "timeout": 0,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 1260,
+        "x": 370,
+        "y": 1420,
         "wires": [
             [
-                "b3092378f7ef4649"
-            ]
-        ]
-    },
-    {
-        "id": "b3092378f7ef4649",
-        "type": "function",
-        "z": "b924b14dcda20cbb",
-        "g": "fc5c3a27e3769f0f",
-        "name": "Extract booking slot",
-        "func": "let bookingSlot = {};\nfor (const [key, value] of Object.entries(msg)) {\n  if (key.includes('slotsToBook')) {\n    let day = key.split('_')[1];\n      bookingSlot =  {\n          day: day,\n          id: value\n        }\n  }\n}\n\nmsg.bookingSlot = bookingSlot;\n\nreturn msg;",
-        "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 550,
-        "y": 1260,
-        "wires": [
-            [
-                "8d9b0737ed48871e"
+                "5fe7aa5e14ed8aae"
             ]
         ]
     },
@@ -1501,8 +1925,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 790,
-        "y": 1260,
+        "x": 800,
+        "y": 1420,
         "wires": [
             [
                 "78f4ee526a240826"
@@ -1542,19 +1966,22 @@
         "longitudeType": "str",
         "url": "paymentUrl",
         "urlType": "msg",
+        "displayMode": "liveweb",
+        "linkDisplayName": "",
+        "linkDisplayNameType": "",
         "enableFullScreenView": "1",
-        "viewSize": "1:2",
+        "viewSize": "2:1",
         "channelId": "",
         "channelIdType": "str",
         "tunnelId": "",
         "tunnelIdType": "str",
         "formLocation": "savedForm",
         "formLocationType": "flow",
-        "x": 540,
-        "y": 1340,
+        "x": 570,
+        "y": 1480,
         "wires": [
             [
-                "eacf5d7107ef6b2f"
+                "f9dc491d16d795fd"
             ]
         ]
     },
@@ -1580,19 +2007,22 @@
         "groupChatIdType": "str",
         "channelId": "",
         "channelIdType": "str",
+        "silent": "true",
         "title": "",
         "titleType": "str",
-        "saveLocation": "aaa",
+        "saveLocation": "savedPaymentMsgId",
         "saveLocationType": "msg",
         "saveRequestIdLocation": "savedRequestId",
         "saveRequestIdLocationType": "flow",
         "cameraOptions": [],
         "cameraList": [],
         "logToConsole": false,
-        "x": 740,
-        "y": 1340,
+        "x": 1060,
+        "y": 1460,
         "wires": [
-            []
+            [
+                "cb727bc03427a8d3"
+            ]
         ]
     },
     {
@@ -1608,8 +2038,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 1340,
+        "x": 370,
+        "y": 1480,
         "wires": [
             [
                 "cd7e40b58c4755db"
@@ -1617,170 +2047,157 @@
         ]
     },
     {
-        "id": "0cb05d914125f8a3",
-        "type": "smeMessage",
+        "id": "5fe7aa5e14ed8aae",
+        "type": "function",
         "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "Search message expired",
-        "message": "html",
-        "text": "This is a text message.",
-        "textType": "str",
-        "html": "<i>Search message expired</i>",
-        "htmlType": "str",
-        "fileIds": "",
-        "fileIdsType": "str",
-        "contactIds": "",
-        "contactIdsType": "str",
-        "title": "MyTitle",
-        "titleType": "str",
-        "description": "",
-        "descriptionType": "str",
-        "start": 0,
-        "startType": "num",
-        "end": 0,
-        "endType": "num",
-        "allDay": "false",
-        "allDayType": "bool",
-        "locationName": "myLocation",
-        "locationNameType": "str",
-        "latitude": "",
-        "latitudeType": "str",
-        "longitude": "",
-        "longitudeType": "str",
-        "url": "",
-        "urlType": "str",
-        "enableFullScreenView": "1",
-        "viewSize": "1:2",
-        "channelId": "",
-        "channelIdType": "str",
-        "tunnelId": "",
-        "tunnelIdType": "str",
-        "formLocation": "savedForm",
-        "formLocationType": "flow",
-        "x": 830,
-        "y": 520,
-        "wires": [
-            [
-                "c860181a71e91a26"
-            ]
-        ]
-    },
-    {
-        "id": "2757483e6be1bd42",
-        "type": "delay",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
+        "g": "fc5c3a27e3769f0f",
+        "name": "Extract booking slot",
+        "func": "let bookingSlot = {};\n\nif (Array.isArray(msg.slotsCalendar) && typeof msg.slotsCalendar[0] === 'object') {\n  bookingSlot = {\n    day: msg.slotsCalendar[0].additionalInfo.day,\n    id: msg.slotsCalendar[0].additionalInfo.slotId\n  }\n}\n\nmsg.bookingSlot = bookingSlot;\n\nreturn msg;",
         "outputs": 1,
-        "x": 1380,
-        "y": 520,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1420,
         "wires": [
             [
-                "3eeead223038acca"
+                "8d9b0737ed48871e"
             ]
         ]
     },
     {
-        "id": "4b022fd9833b76e6",
-        "type": "smeMessage",
+        "id": "cb727bc03427a8d3",
+        "type": "function",
         "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "Search message expired",
-        "message": "html",
-        "text": "This is a text message.",
-        "textType": "str",
-        "html": "<i>Search message expired</i>",
-        "htmlType": "str",
-        "fileIds": "",
-        "fileIdsType": "str",
-        "contactIds": "",
-        "contactIdsType": "str",
-        "title": "MyTitle",
-        "titleType": "str",
-        "description": "",
-        "descriptionType": "str",
-        "start": 0,
-        "startType": "num",
-        "end": 0,
-        "endType": "num",
-        "allDay": "false",
-        "allDayType": "bool",
-        "locationName": "myLocation",
-        "locationNameType": "str",
-        "latitude": "",
-        "latitudeType": "str",
-        "longitude": "",
-        "longitudeType": "str",
-        "url": "",
-        "urlType": "str",
-        "enableFullScreenView": "1",
-        "viewSize": "1:2",
-        "channelId": "",
-        "channelIdType": "str",
-        "tunnelId": "",
-        "tunnelIdType": "str",
-        "formLocation": "savedForm",
-        "formLocationType": "flow",
-        "x": 890,
-        "y": 640,
-        "wires": [
-            [
-                "7e8fabb70c920354"
-            ]
-        ]
-    },
-    {
-        "id": "591f39b0b7e50490",
-        "type": "delay",
-        "z": "b924b14dcda20cbb",
-        "g": "597f5f964bf25ad5",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
+        "g": "fc5c3a27e3769f0f",
+        "name": "Save Payment MsgId in session",
+        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    currentUser.paymentMsgId = msg.savedPaymentMsgId;\n}\nreturn msg;",
         "outputs": 1,
-        "x": 1380,
-        "y": 640,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1350,
+        "y": 1480,
         "wires": [
-            [
-                "cf646de67571b9ea"
-            ]
+            []
         ]
     },
     {
-        "id": "6e83c6c7ab618392",
-        "type": "link in",
+        "id": "9d246304e2a9d47b",
+        "type": "function",
         "z": "b924b14dcda20cbb",
-        "name": "in_fromListener",
-        "links": [
-            "b0bec7a3b4683781"
+        "g": "22a8be0a1056b48a",
+        "name": "Determine how many days to skip",
+        "func": "const defaultDaysToSkip = 3;\n\nlet specifiedDate = parseInt(moment(msg.startDate).endOf('day').format('x')) + 1;\nlet today = parseInt(moment().startOf('day').format('x'));\n\n//node.warn(\"startDate: \" + msg.startDate);\n//node.warn(\"specifiedDate: \"+ specifiedDate);\n//node.warn(\"today: \" + today);\n\nif (specifiedDate < today) {\n    return null;\n}\n\n\nlet daysDifference = moment.duration(specifiedDate - today).asDays();\n\n//node.warn(\"daysDifference: \" + daysDifference);\n\nmsg.skipDays = \n    daysDifference <= defaultDaysToSkip\n    ? defaultDaysToSkip - daysDifference\n    : 0;\n\n\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "moment",
+                "module": "moment-timezone"
+            }
         ],
-        "x": 95,
-        "y": 880,
+        "x": 900,
+        "y": 860,
         "wires": [
             [
-                "13c1880ac68cc0ea",
-                "df0a57ba6835c338",
-                "729a3a7eb45f1b2e"
+                "4141f55dd30b4792"
+            ]
+        ]
+    },
+    {
+        "id": "f9dc491d16d795fd",
+        "type": "switch",
+        "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
+        "name": "New Msg?",
+        "property": "paymentMsgId",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "null"
+            },
+            {
+                "t": "else"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 2,
+        "x": 750,
+        "y": 1480,
+        "wires": [
+            [
+                "eacf5d7107ef6b2f"
+            ],
+            [
+                "29ba1089da48acb1"
+            ]
+        ]
+    },
+    {
+        "id": "29ba1089da48acb1",
+        "type": "smeSender",
+        "z": "b924b14dcda20cbb",
+        "g": "fc5c3a27e3769f0f",
+        "connector": "f9adc5c8242ed986",
+        "async": "0",
+        "name": "",
+        "actionName": "p2p_message_update",
+        "actionText": "P2P - Update Message",
+        "recipientId": "accountId",
+        "recipientIdType": "msg",
+        "messageId": "paymentMsgId",
+        "messageIdType": "msg",
+        "limit": 0,
+        "limitType": "num",
+        "recipientIds": "",
+        "recipientIdsType": "str",
+        "groupChatId": "",
+        "groupChatIdType": "str",
+        "channelId": "",
+        "channelIdType": "str",
+        "silent": "false",
+        "title": "",
+        "titleType": "str",
+        "saveLocation": "savedSlotsMsgId",
+        "saveLocationType": "msg",
+        "saveRequestIdLocation": "savedRequestId",
+        "saveRequestIdLocationType": "flow",
+        "cameraOptions": [],
+        "cameraList": [],
+        "logToConsole": false,
+        "x": 1050,
+        "y": 1500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef3f7c79d2099982",
+        "type": "function",
+        "z": "b924b14dcda20cbb",
+        "g": "597f5f964bf25ad5",
+        "name": "Reset Payment MsgId in session",
+        "func": "let sessions = flow.get(\"userSessions\",\"file\");\n\nlet currentUser = sessions.find(u => u.accountId === msg.submitterId);\nif (currentUser === undefined) {\n    return null;\n} else {\n    delete currentUser.paymentMsgId;\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1560,
+        "y": 660,
+        "wires": [
+            [
+                "fe091290511ddba6"
             ]
         ]
     },
