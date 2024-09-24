@@ -104,14 +104,14 @@ In this case, you are a patient accessing the service to book a visit with your 
 
 > Scan the QR Code below with your semilimes app to get direct access to the demo.
 
-| QR Code |
+| Booking Demo |
 | --- |
 | ![Demo QrCode Image](./images/demo-qrcode.jpg) |
 
 
 Also, don't forget to explore *all demos* we have prepared for you!
 
-| QR Code |
+| All Demos |
 | --- |
 | ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
 
