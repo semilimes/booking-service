@@ -102,18 +102,26 @@ We have already implemented a demo version to let you have a first look about ho
 
 In this case, you are a patient accessing the service to book a visit with your doctor.
 
-> Scan the QR Code below with your semilimes app to get direct access to the demo.
+Scan the QR Code below with your semilimes app to get direct access to the demo, or access it directly with the provided deep link.
 
-| Booking Demo |
-| --- |
-| ![Demo QrCode Image](./images/demo-qrcode.jpg) |
+> **Note:** Deep links may not be supported on your device. If you are not able to access the resource in this way, you can still use the QR code using the following methods:
+> - if you are browsing from a secondary (mobile/PC) device, open the semilimes app on your primary (mobile) device, access the *More* menu and use the QR Code function to scan the code.
+> - if you are browsing from your primary (mobile) device where you have semilimes installed:
+>   - take a screenshot of the provided QR Code
+>   - open semilimes and access the QR Code function
+>   - click on the upper left *photo* icon to load and scan a previously taken picture/screenshot. The QR Code will be scanned automatically and you will be redirected to the related service.
+
+
+| Deep Link | QR Code |
+| --- | --- |
+| [Booking service Demo](https://cloud.semilimes.net/CloudServer/qr/5b9a563a-77a0-42fd-9b60-96ac4205d07d/0b508c3f-e69e-4ba6-aeb7-ad32597cd20d) | ![Demo QrCode Image](./images/demo-qrcode.jpg) |
 
 
 Also, don't forget to explore *all demos* we have prepared for you!
 
-| All Demos |
-| --- |
-| ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
+| Deep Link | All Demos |
+| --- | --- |
+| [All Demos](https://cloud.semilimes.net/CloudServer/qr/3857e37c-1cb8-462f-9ec8-0abdf63f23a3/6de7b9b0-6884-4b9f-984c-ce0ab92b0d9f) | ![NRDemos Image](./images/NRDemos-qrcode.jpg) |
 
 
 ## ⚙️ Configuration instructions
